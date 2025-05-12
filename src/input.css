@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+
+@theme {
+
+    --color-sage: #667B68;
+    --color-terra-cota: #B05C3C;
+    --color-deep-forest: #3B4443;
+    --color-oat: #F0E9E1;
+
+}
+
+
+.lora {
+    font-family: "Lora", serif;
+}
+
+body {
+    @apply text-deep-forest;
+}
+
+.button-next,.button-prev{
+    @apply cursor-pointer;
+}
+.button-next svg,.button-prev svg{
+    @apply fill-sage;
+}
+.button-next.swiper-button-disabled svg,.button-prev.swiper-button-disabled svg{
+    @apply opacity-50;
+}
+
+.button-next.swiper-button-disabled,.button-prev.swiper-button-disabled{
+    @apply cursor-auto;
+}

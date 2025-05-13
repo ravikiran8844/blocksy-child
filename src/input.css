@@ -32,3 +32,13 @@ body {
 .button-next.swiper-button-disabled,.button-prev.swiper-button-disabled{
     @apply cursor-auto;
 }
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    @apply bg-terra-cota;
+}
+
+.swiper-pagination-bullet{
+    @apply !w-8 h-1 !rounded-sm bg-oat;
+}
+[x-cloak] {
+    display: none;
+}

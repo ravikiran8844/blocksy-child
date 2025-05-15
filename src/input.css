@@ -42,3 +42,26 @@ body {
 [x-cloak] {
     display: none;
 }
+
+.single_add_to_cart_button {
+    @apply !bg-transparent !rounded-full !uppercase !font-medium !border !border-deep-forest !text-deep-forest hover:!bg-deep-forest hover:!text-white;    
+}
+
+.buy-now-button{
+    @apply !bg-terra-cota !rounded-full !uppercase !font-medium !border !border-terra-cota !text-white;    
+
+}
+
+form.variations_form table.variations select{
+    @apply !bg-white !max-w-xs !text-deep-forest;
+}
+
+/* .input-text.qty{
+    @apply !border-none !flex !items-center !justify-center;
+}
+.quantity .ct-decrease,.quantity .ct-increase{
+    @apply !bg-white !border !border-[#D9E2DA] !rounded-full !text-deep-forest !size-8 !flex !items-center !justify-center;
+} */
+body.product-template-default{
+    @apply !bg-[#F4F5F4];
+}

@@ -3,15 +3,85 @@
 Template Name: Home Page
 */
 get_header(); ?>
-<link rel="stylesheet"
-    href="<?php echo get_stylesheet_directory_uri(); ?>/assets/InfiniteMarquee/infinite-marquee.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 <main>
+
+    <section class="py-4 ps-4 collection-slider-mobile lg:hidden">
+
+
+        <div class="swiper max-w-3xl mx-auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/idols/"> <img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img1.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            Idols
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/earrings/"><img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img2.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            Earrings
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/necklace/"> <img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img3.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            Necklace
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/stud/"><img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img4.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            Stud
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/pendant/"><img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img5.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="text-sm">
+                            Pendant
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section>
         <div>
-            <a href="#">
+            <a href="/product-category/rings/">
                 <picture>
                     <source media="(min-width: 768px)"
                         srcset="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/hero.jpg">
@@ -24,37 +94,371 @@ get_header(); ?>
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <section class="ct-container py-8 md:py-12 lg:py-16">
+    <section class="ct-container py-8 md:py-12 lg:py-16 collection-slider-desktop max-lg:hidden">
         <div class="text-center space-y-2">
             <div class="text-2xl lg:text-3xl text-deep-forest italic lora">Choose by style</div>
             <div class="text-sage">Where every piece tells a tale.</div>
         </div>
 
-        <div>
-            <div class="flex flex-col justify-center items-center gap-2 min-w-32">
-                <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/image.png" alt="">
+        <div class="swiper max-w-3xl mt-10 mx-auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/idols/"> <img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img1.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div>
+                            Idols
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    Idols
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/earrings/"><img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img2.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div>
+                            Earrings
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/necklace/"> <img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img3.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div>
+                            Necklace
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/stud/"><img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img4.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div>
+                            Stud
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-center items-center gap-2">
+                        <div class="rounded-full overflow-hidden border border-deep-forest p-1">
+                            <a href="/product-category/pendant/"><img class="aspect-square object-cover"
+                                    src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img5.png"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div>
+                            Pendant
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-       
-    </section> -->
+    </section>
 
+
+    <section class="ct-container py-8 md:py-12 lg:py-16 products-slider">
+
+        <div class="bg-white">
+            <div class="p-6 flex justify-between items-center max-md:hidden">
+                <div class="space-y-2">
+                    <div class="text-sage">Tailored Luxury</div>
+                    <div class="text-2xl lg:text-3xl text-deep-forest italic lora">Fine Jewellery That Adapts to Your Style</div>
+
+                </div>
+                <div>
+                    <a class="text-sage border uppercase text-sm border-sage rounded-full px-4 py-2 flex gap-1 items-center w-fit"
+                        href="/shop">View all <svg xmlns="http://www.w3.org/2000/svg" width="15" height="7"
+                            viewBox="0 0 15 7" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.867 3.1633L12.0177 0.135906C11.9763 0.0928365 11.927 0.058775 11.8725 0.0354241C11.8181 0.0120731 11.7597 0 11.7007 0C11.6417 0 11.5833 0.0120731 11.5289 0.0354241C11.4745 0.058775 11.4251 0.0928365 11.3838 0.135906C11.3016 0.22712 11.2559 0.346646 11.2559 0.470731C11.2559 0.594817 11.3016 0.714342 11.3838 0.805557L13.4764 3.02399H0.463565C0.34063 3.02399 0.222728 3.074 0.135799 3.16296C0.0488709 3.25192 0 3.37266 0 3.49847C0 3.62427 0.0488709 3.74467 0.135799 3.83363C0.222728 3.92259 0.34063 3.9726 0.463565 3.9726H13.4764L11.3838 6.19104C11.3016 6.28225 11.2559 6.40178 11.2559 6.52586C11.2559 6.64995 11.3016 6.76947 11.3838 6.86069C11.4246 6.90472 11.4737 6.93959 11.5282 6.96355C11.5827 6.98752 11.6414 7 11.7007 7C11.76 7 11.8187 6.98752 11.8732 6.96355C11.9277 6.93959 11.9768 6.90472 12.0177 6.86069L14.867 3.83329C14.9523 3.74368 15 3.62355 15 3.49847C15 3.37338 14.9523 3.25291 14.867 3.1633Z"
+                                fill="#667B68"></path>
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="md:hidden text-center space-y-2 mb-6 p-4">
+                <div class="text-sage">SHOP OUR BEST-SELLERS</div>
+                <div class="text-2xl text-deep-forest italic lora">Modular fine Jewellery for
+                    every mood. The ultimate
+                    luxury experience.</div>
+
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="relative">
+                                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg"
+                                    alt="">
+
+                                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-300 space-y-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="85" height="16"
+                                        viewBox="0 0 105 19" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                    </svg>
+                                </div>
+
+                                <div class="flex gap-2 items-center flex-wrap">
+                                    <div class="text-md font-semibold text-sage">₹ 45,445.00</div>
+                                    <div class="text-sm line-through text-[#6D6D6D]">₹ 48,397.00</div>
+                                </div>
+
+                                <div class="flex justify-between gap-2 flex-wrap">
+                                    <div class="text-sm text-deep-forest">Silver Miracle Earrings</div>
+                                    <div class="font-semibold text-sm text-sage">16g</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="relative">
+                                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg"
+                                    alt="">
+                                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-300 space-y-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="85" height="16"
+                                        viewBox="0 0 105 19" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                    </svg>
+                                </div>
+
+                                <div class="flex gap-2 items-center flex-wrap">
+                                    <div class="text-md font-semibold text-sage">₹ 45,445.00</div>
+                                    <div class="text-sm line-through text-[#6D6D6D]">₹ 48,397.00</div>
+                                </div>
+
+                                <div class="flex justify-between gap-2 flex-wrap">
+                                    <div class="text-sm text-deep-forest">Silver Miracle Earrings</div>
+                                    <div class="font-semibold text-sm text-sage">16g</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="relative">
+                                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg"
+                                    alt="">
+                                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-300 space-y-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="85" height="16"
+                                        viewBox="0 0 105 19" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                    </svg>
+                                </div>
+
+                                <div class="flex gap-2 items-center flex-wrap">
+                                    <div class="text-md font-semibold text-sage">₹ 45,445.00</div>
+                                    <div class="text-sm line-through text-[#6D6D6D]">₹ 48,397.00</div>
+                                </div>
+
+                                <div class="flex justify-between gap-2 flex-wrap">
+                                    <div class="text-sm text-deep-forest">Silver Miracle Earrings</div>
+                                    <div class="font-semibold text-sm text-sage">16g</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="relative">
+                                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg"
+                                    alt="">
+                                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-300 space-y-1">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="85" height="16"
+                                        viewBox="0 0 105 19" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
+                                            fill="#FFAA00" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
+                                            fill="#FFBD38" />
+                                    </svg>
+                                </div>
+
+                                <div class="flex gap-2 items-center flex-wrap">
+                                    <div class="text-md font-semibold text-sage">₹ 45,445.00</div>
+                                    <div class="text-sm line-through text-[#6D6D6D]">₹ 48,397.00</div>
+                                </div>
+
+                                <div class="flex justify-between gap-2 flex-wrap">
+                                    <div class="text-sm text-deep-forest">Silver Miracle Earrings</div>
+                                    <div class="font-semibold text-sm text-sage">16g</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-8 md:hidden">
+                <div class="flex justify-center items-center">
+                    <a class="text-sage uppercase border text-sm border-sage rounded-full px-4 py-2 flex gap-1 items-center w-fit"
+                        href="/shop">View all <svg xmlns="http://www.w3.org/2000/svg" width="15" height="7"
+                            viewBox="0 0 15 7" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.867 3.1633L12.0177 0.135906C11.9763 0.0928365 11.927 0.058775 11.8725 0.0354241C11.8181 0.0120731 11.7597 0 11.7007 0C11.6417 0 11.5833 0.0120731 11.5289 0.0354241C11.4745 0.058775 11.4251 0.0928365 11.3838 0.135906C11.3016 0.22712 11.2559 0.346646 11.2559 0.470731C11.2559 0.594817 11.3016 0.714342 11.3838 0.805557L13.4764 3.02399H0.463565C0.34063 3.02399 0.222728 3.074 0.135799 3.16296C0.0488709 3.25192 0 3.37266 0 3.49847C0 3.62427 0.0488709 3.74467 0.135799 3.83363C0.222728 3.92259 0.34063 3.9726 0.463565 3.9726H13.4764L11.3838 6.19104C11.3016 6.28225 11.2559 6.40178 11.2559 6.52586C11.2559 6.64995 11.3016 6.76947 11.3838 6.86069C11.4246 6.90472 11.4737 6.93959 11.5282 6.96355C11.5827 6.98752 11.6414 7 11.7007 7C11.76 7 11.8187 6.98752 11.8732 6.96355C11.9277 6.93959 11.9768 6.90472 12.0177 6.86069L14.867 3.83329C14.9523 3.74368 15 3.62355 15 3.49847C15 3.37338 14.9523 3.25291 14.867 3.1633Z"
+                                fill="#667B68"></path>
+                        </svg></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
 
 
 
@@ -334,7 +738,7 @@ get_header(); ?>
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="grid grid-rows-[32px_auto] gap-2 place-items-center">
+                        <div class="grid grid-rows-[32px_auto] gap-4 place-items-center">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="53" class="size-8"
                                     viewBox="0 0 42 53" fill="none">
@@ -348,10 +752,10 @@ get_header(); ?>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="grid grid-rows-[32px_auto] gap-2 place-items-center">
+                        <div class="grid grid-rows-[32px_auto] gap-4 place-items-center">
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="49" class="size-8" viewBox="0 0 45 49"
-                                    fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="49" class="size-8"
+                                    viewBox="0 0 45 49" fill="none">
                                     <path
                                         d="M22.4974 30.9962C26.1214 30.9962 29.0592 28.0584 29.0592 24.4344C29.0592 20.8104 26.1214 17.8726 22.4974 17.8726C18.8734 17.8726 15.9355 20.8104 15.9355 24.4344C15.9355 28.0584 18.8734 30.9962 22.4974 30.9962Z"
                                         stroke="white" stroke-width="2" stroke-linecap="round"
@@ -388,10 +792,10 @@ get_header(); ?>
 
 
                     <div class="swiper-slide">
-                        <div class="grid grid-rows-[32px_auto] gap-2 place-items-center">
+                        <div class="grid grid-rows-[32px_auto] gap-4 place-items-center">
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="52" class="size-8" viewBox="0 0 49 52"
-                                    fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="52" class="size-8"
+                                    viewBox="0 0 49 52" fill="none">
                                     <path
                                         d="M19.9273 31.1974C20.6303 31.9004 21.5744 32.2854 22.5753 32.2854C23.5796 32.2854 24.5135 31.9004 25.2232 31.1974L33.2173 23.2034C33.542 22.8786 33.7127 22.4501 33.7127 21.9948C33.7127 21.5395 33.5319 21.1043 33.2173 20.7863C32.608 20.177 31.3995 20.177 30.7936 20.7863L22.5753 29.0047L17.7848 24.2143C17.4836 23.913 17.0383 23.7356 16.5763 23.7356C16.1143 23.7356 15.6691 23.9063 15.3678 24.2143C15.0431 24.539 14.8623 24.9675 14.8623 25.4328C14.8623 25.8948 15.0431 26.3233 15.3577 26.6413L19.9239 31.2075L19.9273 31.1974Z"
                                         fill="white" />
@@ -400,16 +804,17 @@ get_header(); ?>
                                         fill="white" />
                                 </svg>
                             </div>
-                            <div class="text-xs md:text-sm text-white text-center">Trusted craftsmanship <br> since 2024</div>
+                            <div class="text-xs md:text-sm text-white text-center">Trusted craftsmanship <br> since 2024
+                            </div>
                         </div>
                     </div>
 
 
                     <div class="swiper-slide">
-                        <div class="grid grid-rows-[32px_auto] gap-2 place-items-center">
+                        <div class="grid grid-rows-[32px_auto] gap-4 place-items-center">
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" class="size-8" viewBox="0 0 48 47"
-                                    fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" class="size-8"
+                                    viewBox="0 0 48 47" fill="none">
                                     <path
                                         d="M17.9737 44.1487C19.36 45.9353 21.539 47 23.7944 47C26.0499 47 28.2289 45.9353 29.6151 44.1487L45.4798 23.7007C46.6549 22.1894 47.3037 20.2926 47.3037 18.3836V18.2826C47.3037 16.7958 46.9212 15.3212 46.1897 14.021L40.5496 3.99548C39.1633 1.53582 36.5467 0 33.719 0H14.5709C11.8533 0 9.36841 1.37973 7.92696 3.68033L1.61965 13.7669C0.756616 15.1467 0.303711 16.7436 0.303711 18.3712C0.303711 20.2893 0.952493 22.177 2.12764 23.6883L17.9923 44.1364L17.9737 44.1487ZM20.4495 42.2306L4.58489 21.7825C4.42882 21.5867 4.30334 21.3664 4.17787 21.1553H22.2213V43.5559C21.5235 43.2744 20.8962 42.8186 20.4432 42.2312L20.4495 42.2306ZM27.1394 42.2306C26.6865 42.818 26.0591 43.2707 25.3614 43.5552V21.1547H43.4048C43.2793 21.375 43.1538 21.5861 42.9977 21.7818L27.1331 42.2299L27.1394 42.2306ZM43.4506 15.5625C43.8729 16.315 44.1086 17.1594 44.1483 18.0221H26.8022L36.5404 4.09636C37.0484 4.47877 37.489 4.96522 37.8104 5.53726L43.4506 15.5625ZM33.3818 3.14198L23.7941 16.8571L14.2064 3.16704C14.3227 3.15786 14.442 3.14256 14.5675 3.14256H33.3857L33.3818 3.14198ZM10.5767 5.35079C10.7818 5.02038 11.0235 4.72363 11.2898 4.46665L20.7858 18.0227H3.44911C3.51032 17.1049 3.77963 16.2208 4.26318 15.4376L10.5705 5.35102L10.5767 5.35079Z"
                                         fill="white" />
@@ -421,10 +826,10 @@ get_header(); ?>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="grid grid-rows-[32px_auto] gap-2 place-items-center">
+                        <div class="grid grid-rows-[32px_auto] gap-4 place-items-center">
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="56" class="size-8" viewBox="0 0 58 56"
-                                    fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="56" class="size-8"
+                                    viewBox="0 0 58 56" fill="none">
                                     <path
                                         d="M32.7427 41.1263L28.2434 53.3353C28.1102 53.6941 27.8704 54.0035 27.5563 54.222C27.2421 54.4405 26.8686 54.5577 26.4859 54.5577C26.1032 54.5577 25.7296 54.4405 25.4155 54.222C25.1013 54.0035 24.8615 53.6941 24.7283 53.3353L20.229 41.1263C20.1341 40.8686 19.9843 40.6346 19.7901 40.4404C19.5959 40.2462 19.3619 40.0964 19.1042 40.0015L6.89519 35.5022C6.53641 35.369 6.22699 35.1292 6.00848 34.8151C5.78997 34.5009 5.67285 34.1273 5.67285 33.7447C5.67285 33.362 5.78997 32.9884 6.00848 32.6743C6.22699 32.3601 6.53641 32.1203 6.89519 31.9871L19.1042 27.4878C19.3619 27.3929 19.5959 27.2431 19.7901 27.0489C19.9843 26.8547 20.1341 26.6207 20.229 26.363L24.7283 14.154C24.8615 13.7952 25.1013 13.4858 25.4155 13.2673C25.7296 13.0488 26.1032 12.9316 26.4859 12.9316C26.8686 12.9316 27.2421 13.0488 27.5563 13.2673C27.8704 13.4858 28.1102 13.7952 28.2434 14.154L32.7427 26.363C32.8377 26.6207 32.9874 26.8547 33.1816 27.0489C33.3758 27.2431 33.6098 27.3929 33.8675 27.4878L46.0765 31.9871C46.4353 32.1203 46.7447 32.3601 46.9633 32.6743C47.1818 32.9884 47.2989 33.362 47.2989 33.7447C47.2989 34.1273 47.1818 34.5009 46.9633 34.8151C46.7447 35.1292 46.4353 35.369 46.0765 35.5022L33.8675 40.0015C33.6098 40.0964 33.3758 40.2462 33.1816 40.4404C32.9874 40.6346 32.8377 40.8686 32.7427 41.1263Z"
                                         stroke="white" stroke-width="2.81206" stroke-linecap="round"
@@ -445,16 +850,17 @@ get_header(); ?>
 
 
                     <div class="swiper-slide">
-                        <div class="grid grid-rows-[32px_auto] gap-2 place-items-center">
+                        <div class="grid grid-rows-[32px_auto] gap-4 place-items-center">
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" class="size-8" viewBox="0 0 52 52"
-                                    fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" class="size-8"
+                                    viewBox="0 0 52 52" fill="none">
                                     <path
                                         d="M51.215 25.342L47.1798 20.4591L48.2328 14.2135C48.3323 13.6251 47.9995 13.0492 47.4404 12.8408L41.5052 10.6292L39.2935 4.6939C39.0852 4.13539 38.5111 3.79953 37.9209 3.90153L31.6753 4.95449L26.7924 0.919286C26.3327 0.539275 25.6673 0.539275 25.2076 0.919286L20.3247 4.95449L14.0791 3.90153C13.4902 3.80078 12.9148 4.13476 12.7065 4.6939L10.4949 10.6292L4.55961 12.8408C4.00048 13.0492 3.66773 13.6251 3.76725 14.2135L4.8202 20.4591L0.785007 25.342C0.404998 25.8016 0.404998 26.4671 0.785007 26.9267L4.8202 31.8096L3.76725 38.0553C3.66773 38.6436 4.00048 39.2195 4.55961 39.4279L10.4949 41.6396L12.7065 47.5748C12.9142 48.1333 13.4864 48.4679 14.0791 48.3672L20.3247 47.3142L25.2076 51.3494C25.4378 51.5391 25.7189 51.6343 26 51.6343C26.2811 51.6343 26.5622 51.5391 26.7924 51.3494L31.6753 47.3142L37.9209 48.3672C38.5086 48.4667 39.0858 48.1339 39.2935 47.5748L41.5052 41.6396L47.4404 39.4279C47.9995 39.2195 48.3323 38.6436 48.2328 38.0553L47.1798 31.8096L51.215 26.9267C51.595 26.4671 51.595 25.8016 51.215 25.342ZM44.8997 30.6634C44.6696 30.942 44.572 31.3065 44.6317 31.6622L45.6081 37.4551L40.1033 39.5063C39.7649 39.6325 39.4981 39.8993 39.3719 40.2377L37.3207 45.7432L31.5279 44.7667C31.1696 44.707 30.8064 44.8047 30.529 45.0348L26 48.7764L21.471 45.0342C21.2465 44.8482 20.966 44.7493 20.6786 44.7493C20.6102 44.7493 20.5405 44.7549 20.4715 44.7667L14.6787 45.7432L12.6281 40.2377C12.5019 39.8993 12.2351 39.6325 11.8967 39.5063L6.39124 37.4551L7.3677 31.6622C7.42803 31.3059 7.32976 30.9414 7.09964 30.6634L3.358 26.1344L7.10026 21.6053C7.33038 21.3267 7.42803 20.9622 7.36832 20.6065L6.39186 14.8136L11.8973 12.7624C12.2357 12.6362 12.5025 12.3694 12.6288 12.031L14.6799 6.52554L20.4728 7.502C20.8291 7.5617 21.1936 7.46344 21.4716 7.23394L26 3.49229L30.529 7.23456C30.807 7.4653 31.1709 7.56295 31.5279 7.50262L37.3207 6.52616L39.3719 12.0317C39.4981 12.37 39.7649 12.6368 40.1033 12.7631L45.6088 14.8143L44.6323 20.6071C44.572 20.9635 44.6702 21.3279 44.9004 21.6059L48.642 26.1344L44.8997 30.6634ZM26 9.96367C17.0838 9.96367 9.82937 17.2181 9.82937 26.1344C9.82937 35.0506 17.0838 42.305 26 42.305C34.9162 42.305 42.1706 35.0506 42.1706 26.1344C42.1706 17.2181 34.9162 9.96367 26 9.96367ZM26 39.8172C18.4552 39.8172 12.3172 33.6792 12.3172 26.1344C12.3172 18.5895 18.4552 12.4515 26 12.4515C33.5448 12.4515 39.6828 18.5895 39.6828 26.1344C39.6828 33.6792 33.5448 39.8172 26 39.8172ZM33.7302 23.3045L29.3517 22.3442L27.0579 18.6386C26.8309 18.2717 26.4304 18.049 26 18.049C25.5696 18.049 25.1691 18.2717 24.9421 18.638L22.6483 22.3436L18.2698 23.3039C17.8363 23.399 17.4862 23.7181 17.3512 24.141C17.2162 24.5639 17.317 25.026 17.6149 25.3551L20.5493 28.5886L20.1481 32.8589C20.1077 33.293 20.2967 33.7165 20.6469 33.9753C20.9971 34.234 21.4579 34.2906 21.8609 34.1245L26 32.4185L30.1384 34.1258C30.2908 34.1886 30.4525 34.2197 30.613 34.2197C30.8748 34.2197 31.1348 34.137 31.3525 33.9759C31.7026 33.7165 31.8923 33.293 31.8513 32.8595L31.4501 28.5892L34.3845 25.3557C34.6824 25.0267 34.7831 24.5646 34.6482 24.1416C34.5132 23.7181 34.1631 23.3996 33.7302 23.3045ZM29.2391 27.3235C29.0046 27.5823 28.8889 27.9281 28.9219 28.2757L29.1813 31.0397L26.4739 29.9233C26.3228 29.8598 26.1611 29.8287 26 29.8287C25.8389 29.8287 25.6772 29.8598 25.5255 29.9226L22.8181 31.039L23.0775 28.2751C23.1104 27.9274 22.9948 27.5816 22.7603 27.3229L20.9007 25.2736L23.6951 24.6603C24.0235 24.5882 24.3089 24.3861 24.4862 24.1L26 21.6557L27.5132 24.1006C27.6905 24.3867 27.9759 24.5888 28.3043 24.661L31.0987 25.2742L29.2391 27.3235Z"
                                         fill="white" />
                                 </svg>
                             </div>
-                            <div class="text-xs md:text-sm text-white text-center">Certifies Quality <br> Assurance</div>
+                            <div class="text-xs md:text-sm text-white text-center">Certifies Quality <br> Assurance
+                            </div>
                         </div>
                     </div>
 
@@ -473,6 +879,112 @@ get_header(); ?>
         </div>
     </section>
 
+    <section class="ct-container py-8 md:py-12 lg:py-16 new-arrivals">
+
+        <div class="bg-white shadow">
+            <div class="text-center space-y-2 py-6">
+                <div class="text-2xl lg:text-3xl text-deep-forest italic lora">New Arrivals</div>
+                <div class="text-sage">Redefine your wardrobe with our latest designs.</div>
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="/product-category/rings/">
+                            <div>
+                                <div>
+                                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg"
+                                        alt="">
+                                </div>
+                                <div class="p-4 border border-gray-300">
+                                    <div class="lora text-deep-forest font-semibold text-lg mb-1 italic">Rings</div>
+                                    <div class="text-sm text-sage">Silver Miracle Earrings</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="/product-category/earrings/">
+                            <div>
+                                <div>
+                                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg"
+                                        alt="">
+                                </div>
+                                <div class="p-4 border border-gray-300">
+                                    <div class="lora text-deep-forest font-semibold text-lg mb-1 italic">Earrings</div>
+                                    <div class="text-sm text-sage">Silver Miracle Earrings</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="/product-category/pendant/">
+                            <div>
+                                <div>
+                                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="p-4 border border-gray-300">
+                                    <div class="lora text-deep-forest font-semibold text-lg mb-1 italic">Pendants</div>
+                                    <div class="text-sm text-sage">Silver Miracle Earrings</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="/product-category/necklace/">
+                            <div>
+                                <div>
+                                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg"
+                                        alt="">
+                                </div>
+                                <div class="p-4 border border-gray-300">
+                                    <div class="lora text-deep-forest font-semibold text-lg mb-1 italic">Necklace</div>
+                                    <div class="text-sm text-sage">Silver Miracle Earrings</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="py-8 md:py-12 lg:py-16">
+        <div class="p-8 lg:p-12 text-white" style="background: linear-gradient(100deg, #964B30 1.71%, #DA7854 97.48%);">
+            <div class="grid lg:grid-cols-2 gap-10 ct-container">
+                <div>
+                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/banner-img1.webp" alt="">
+                </div>
+                <div class="space-y-4 my-auto max-lg:text-center">
+                    <div class="uppercase text-sm">LIMITED TIME ONLY</div>
+                    <div class="lora text-2xl lg:text-3xl italic">
+                        Your gift with <br>
+                        purchase over ₹24,499.
+                    </div>
+                    <div>
+                        Giving graciously is what we do best. Few feelings are more rewarding
+                        than seeing someone smile as they unwrap a present you’ve thoughtfully
+                        chosen because it’s simply them.
+                    </div>
+                    <div>
+                        <a href="/shop" class="uppercase !underline underline-offset-4 !text-white">
+                            SHOP NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="ct-container py-8 md:py-12 lg:py-16">
         <div class="text-center space-y-2">
@@ -927,13 +1439,11 @@ get_header(); ?>
 
 
 
-    
+
 
 
 
 </main>
-
-<script src="//unpkg.com/alpinejs" defer></script>
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -1023,6 +1533,82 @@ get_header(); ?>
             1240: {
                 slidesPerView: 6,
                 spaceBetween: 20,
+            },
+        },
+    });
+
+
+    let swiper6 = new Swiper(".collection-slider-desktop .swiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: false,
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1240: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+        },
+    });
+
+    let swiper7 = new Swiper(".collection-slider-mobile .swiper", {
+        slidesPerView: 3.5,
+        spaceBetween: 10,
+        loop: false,
+        breakpoints: {
+            640: {
+                slidesPerView: 4.5,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+            1240: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+        },
+    });
+
+
+    let swiper8 = new Swiper(".new-arrivals .swiper", {
+        slidesPerView: 1.3,
+        spaceBetween: 0,
+        loop: false,
+        breakpoints: {
+            640: {
+                slidesPerView: 2.3,
+            },
+            968: {
+                slidesPerView: 3.3,
+            },
+            1240: {
+                slidesPerView: 4,
+            },
+        },
+    });
+
+    let swiper9 = new Swiper(".products-slider .swiper", {
+        slidesPerView: 1.3,
+        spaceBetween: 0,
+        loop: false,
+        breakpoints: {
+            640: {
+                slidesPerView: 2.3,
+            },
+            968: {
+                slidesPerView: 3.3,
+            },
+            1240: {
+                slidesPerView: 4,
             },
         },
     });

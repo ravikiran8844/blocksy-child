@@ -14,3 +14,5 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style('tailwind-style', get_stylesheet_directory_uri() . '/src/output.css');
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
+
+

@@ -6,14 +6,12 @@ get_header(); ?>
 <main>
 
     <section class="py-4 ps-4 collection-slider-mobile lg:hidden">
-
-
-        <div class="swiper max-w-3xl mx-auto">
+        <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/idols/"> <img class="aspect-square object-cover"
+                            <a href="/product-category/idols/"> <img height="90" width="90"  class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img1.png"
                                     alt="">
                             </a>
@@ -26,7 +24,7 @@ get_header(); ?>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/earrings/"><img class="aspect-square object-cover"
+                            <a href="/product-category/earrings/"><img  height="90" width="90"  class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img2.png"
                                     alt="">
                             </a>
@@ -39,7 +37,7 @@ get_header(); ?>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/necklace/"> <img class="aspect-square object-cover"
+                            <a href="/product-category/necklace/"> <img  height="90" width="90"  class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img3.png"
                                     alt="">
                             </a>
@@ -52,7 +50,7 @@ get_header(); ?>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/stud/"><img class="aspect-square object-cover"
+                            <a href="/product-category/stud/"><img  height="90" width="90"  class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img4.png"
                                     alt="">
                             </a>
@@ -65,7 +63,7 @@ get_header(); ?>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/pendant/"><img class="aspect-square object-cover"
+                            <a href="/product-category/pendant/"><img  height="90" width="90"  class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img5.png"
                                     alt="">
                             </a>
@@ -80,14 +78,14 @@ get_header(); ?>
     </section>
 
     <section>
-        <div>
+        <div class="aspect-[767/1174] md:aspect-[192/77]">
             <a href="/product-category/rings/">
                 <picture>
                     <source media="(min-width: 768px)"
                         srcset="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/hero.jpg">
                     <source media="(max-width: 768px)"
                         srcset="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/hero-mobile.jpg">
-                    <img class="w-full h-auto"
+                    <img loading="eager" class="w-full"
                         src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/hero-mobile.jpg" alt="main banner">
                 </picture>
             </a>
@@ -105,7 +103,7 @@ get_header(); ?>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/idols/"> <img class="aspect-square object-cover"
+                            <a href="/product-category/idols/"> <img loading="lazy" class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img1.png"
                                     alt="">
                             </a>
@@ -118,7 +116,7 @@ get_header(); ?>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/earrings/"><img class="aspect-square object-cover"
+                            <a href="/product-category/earrings/"><img loading="lazy" class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img2.png"
                                     alt="">
                             </a>
@@ -131,7 +129,7 @@ get_header(); ?>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/necklace/"> <img class="aspect-square object-cover"
+                            <a href="/product-category/necklace/"> <img loading="lazy" class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img3.png"
                                     alt="">
                             </a>
@@ -144,7 +142,7 @@ get_header(); ?>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/stud/"><img class="aspect-square object-cover"
+                            <a href="/product-category/stud/"><img loading="lazy" class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img4.png"
                                     alt="">
                             </a>
@@ -157,7 +155,7 @@ get_header(); ?>
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-center items-center gap-2">
                         <div class="rounded-full overflow-hidden border border-deep-forest p-1">
-                            <a href="/product-category/pendant/"><img class="aspect-square object-cover"
+                            <a href="/product-category/pendant/"><img loading="lazy" class="aspect-square object-cover" 
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-img5.png"
                                     alt="">
                             </a>
@@ -205,11 +203,11 @@ get_header(); ?>
                     <div class="swiper-slide">
                         <div class="group">
                             <div class="relative">
-                                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg"
+                                <img loading="lazy" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg"
                                     alt="">
 
                                 <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
-                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD TO CART</button>
+                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD TO CART</button>
                                 </div>
                             </div>
                             <div class="p-4 border border-gray-300 space-y-1">
@@ -265,10 +263,10 @@ get_header(); ?>
                     <div class="swiper-slide">
                         <div class="group">
                             <div class="relative">
-                                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg"
+                                <img loading="lazy" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg"
                                     alt="">
                                     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
-                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD TO CART</button>
+                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD TO CART</button>
                                 </div>
                             </div>
                             <div class="p-4 border border-gray-300 space-y-1">
@@ -324,10 +322,10 @@ get_header(); ?>
                     <div class="swiper-slide">
                         <div class="group">
                             <div class="relative">
-                                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg"
+                                <img loading="lazy" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg"
                                     alt="">
                                     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
-                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD TO CART</button>
+                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD TO CART</button>
                                 </div>
                             </div>
                             <div class="p-4 border border-gray-300 space-y-1">
@@ -383,10 +381,10 @@ get_header(); ?>
                     <div class="swiper-slide">
                         <div class="group">
                             <div class="relative">
-                                <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg"
+                                <img loading="lazy" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg"
                                     alt="">
                                     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
-                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD TO CART</button>
+                                    <button class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD TO CART</button>
                                 </div>
                             </div>
                             <div class="p-4 border border-gray-300 space-y-1">
@@ -466,7 +464,7 @@ get_header(); ?>
         <div class="ct-container lg:py-16 max-lg:hidden desktop">
             <div class="grid grid-cols-2 gap-8 bg-white">
                 <div class="rounded-tr-[60px] overflow-hidden rounded-br-[60px]">
-                    <img class="!h-full object-cover w-full"
+                    <img loading="lazy" class="!h-full object-cover w-full"
                         src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-banner.jpg" alt="">
                 </div>
                 <div class="px-6 py-12 flex flex-col justify-between">
@@ -519,7 +517,7 @@ get_header(); ?>
                                     <div class="rounded-3xl bg-[#F4F5F4] p-4 w-full shadow-md">
                                         <div class="grid gap-4 grid-cols-[40%_auto]">
                                             <div class="rounded-xl overflow-hidden">
-                                                <img class="w-full max-h-40 object-cover"
+                                                <img loading="lazy" class="w-full max-h-40 object-cover"
                                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/model-1.jpg"
                                                     alt="">
                                             </div>
@@ -547,7 +545,7 @@ get_header(); ?>
                                     <div class="rounded-3xl bg-[#F4F5F4] p-4 w-full shadow-md">
                                         <div class="grid gap-4 grid-cols-[40%_auto]">
                                             <div class="rounded-xl overflow-hidden">
-                                                <img class="w-full max-h-40 object-cover"
+                                                <img loading="lazy" class="w-full max-h-40 object-cover"
                                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/model-2.jpg"
                                                     alt="">
                                             </div>
@@ -575,7 +573,7 @@ get_header(); ?>
                                     <div class="rounded-3xl bg-[#F4F5F4] p-4 w-full shadow-md">
                                         <div class="grid gap-4 grid-cols-[40%_auto]">
                                             <div class="rounded-xl overflow-hidden">
-                                                <img class="w-full max-h-40 object-cover"
+                                                <img loading="lazy" class="w-full max-h-40 object-cover"
                                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/model-3.jpg"
                                                     alt="">
                                             </div>
@@ -618,7 +616,7 @@ get_header(); ?>
                 <div class="text-md text-sage">Express your love with</div>
             </div>
             <div>
-                <img class="!h-full object-cover w-full"
+                <img loading="lazy" class="!h-full object-cover w-full"
                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection-banner-mobile.jpg" alt="">
             </div>
 
@@ -631,7 +629,7 @@ get_header(); ?>
 
                             <div class="mb-2">
                                 <div class="rounded-3xl overflow-hidden">
-                                    <img class="aspect-square object-cover"
+                                    <img loading="lazy" class="aspect-square object-cover" 
                                         src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/model-1.jpg" alt="">
                                 </div>
                             </div>
@@ -643,7 +641,7 @@ get_header(); ?>
 
                             <div class="mb-2">
                                 <div class="rounded-3xl overflow-hidden">
-                                    <img class="aspect-square object-cover"
+                                    <img loading="lazy" class="aspect-square object-cover" 
                                         src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/model-2.jpg" alt="">
                                 </div>
                             </div>
@@ -655,7 +653,7 @@ get_header(); ?>
 
                             <div class="mb-2">
                                 <div class="rounded-3xl overflow-hidden">
-                                    <img class="aspect-square object-cover"
+                                    <img loading="lazy" class="aspect-square object-cover" 
                                         src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/model-3.jpg" alt="">
                                 </div>
                             </div>
@@ -667,7 +665,7 @@ get_header(); ?>
 
                             <div class="mb-2">
                                 <div class="rounded-3xl overflow-hidden">
-                                    <img class="aspect-square object-cover"
+                                    <img loading="lazy" class="aspect-square object-cover" 
                                         src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/model-2.jpg" alt="">
                                 </div>
                             </div>
@@ -710,19 +708,19 @@ get_header(); ?>
         <div class="grid mt-10 grid-cols-2 sm:grid-cols-3 gap-4 lg:gap-8">
             <div class="rounded-2xl overflow-hidden col-span-2 sm:col-span-1">
                 <a href="#">
-                    <img class="w-full" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection1.jpg"
+                    <img loading="lazy" class="w-full" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection1.jpg"
                         alt="">
                 </a>
             </div>
             <div class="rounded-2xl overflow-hidden">
                 <a href="#">
-                    <img class="w-full" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection2.jpg"
+                    <img loading="lazy" class="w-full" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection2.jpg"
                         alt="">
                 </a>
             </div>
             <div class="rounded-2xl overflow-hidden">
                 <a href="#">
-                    <img class="w-full" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection3.jpg"
+                    <img loading="lazy" class="w-full" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection3.jpg"
                         alt="">
                 </a>
             </div>
@@ -893,7 +891,7 @@ get_header(); ?>
                         <a href="/product-category/rings/">
                             <div>
                                 <div>
-                                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg"
+                                    <img loading="lazy" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg"
                                         alt="">
                                 </div>
                                 <div class="p-4 border border-gray-300">
@@ -908,7 +906,7 @@ get_header(); ?>
                         <a href="/product-category/earrings/">
                             <div>
                                 <div>
-                                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg"
+                                    <img loading="lazy" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg"
                                         alt="">
                                 </div>
                                 <div class="p-4 border border-gray-300">
@@ -923,7 +921,7 @@ get_header(); ?>
                         <a href="/product-category/pendant/">
                             <div>
                                 <div>
-                                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg"
+                                    <img loading="lazy" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg"
                                         alt="">
                                 </div>
                                 <div class="p-4 border border-gray-300">
@@ -938,7 +936,7 @@ get_header(); ?>
                         <a href="/product-category/necklace/">
                             <div>
                                 <div>
-                                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg"
+                                    <img loading="lazy" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg"
                                         alt="">
                                 </div>
                                 <div class="p-4 border border-gray-300">
@@ -963,7 +961,7 @@ get_header(); ?>
         <div class="p-8 lg:p-12 text-white" style="background: linear-gradient(100deg, #964B30 1.71%, #DA7854 97.48%);">
             <div class="grid lg:grid-cols-2 gap-10 ct-container">
                 <div>
-                    <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/banner-img1.webp" alt="">
+                    <img loading="lazy" src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/banner-img1.webp" alt="">
                 </div>
                 <div class="space-y-4 my-auto max-lg:text-center">
                     <div class="uppercase text-sm">LIMITED TIME ONLY</div>
@@ -994,7 +992,7 @@ get_header(); ?>
             <div class="rounded-2xl bg-white p-3 max-w-lg w-full mx-auto">
                 <div class="grid gap-3 grid-cols-[40%_auto]">
                     <div class="rounded-xl overflow-hidden">
-                        <img class="w-full max-h-28 object-cover"
+                        <img loading="lazy" class="w-full max-h-28 object-cover"
                             src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/shop-by-1.png" alt="">
                     </div>
                     <div class="flex flex-col justify-between">
@@ -1017,7 +1015,7 @@ get_header(); ?>
             <div class="rounded-2xl bg-white p-3 max-w-lg w-full mx-auto">
                 <div class="grid gap-3 grid-cols-[40%_auto]">
                     <div class="rounded-xl overflow-hidden">
-                        <img class="w-full max-h-28 object-cover"
+                        <img loading="lazy" class="w-full max-h-28 object-cover"
                             src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/shop-by-2.png" alt="">
                     </div>
                     <div class="flex flex-col justify-between">
@@ -1040,7 +1038,7 @@ get_header(); ?>
             <div class="rounded-2xl bg-white p-3 max-w-lg w-full mx-auto">
                 <div class="grid gap-3 grid-cols-[40%_auto]">
                     <div class="rounded-xl overflow-hidden">
-                        <img class="w-full max-h-28 object-cover"
+                        <img loading="lazy" class="w-full max-h-28 object-cover"
                             src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/shop-by-3.png" alt="">
                     </div>
                     <div class="flex flex-col justify-between">
@@ -1135,7 +1133,7 @@ get_header(); ?>
                                 </div>
                             </div>
                             <div class="rounded-xl overflow-hidden">
-                                <img class="w-full max-h-28 object-cover"
+                                <img loading="lazy" class="w-full max-h-28 object-cover"
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/shop-by-1.png" alt="">
                             </div>
 
@@ -1144,7 +1142,7 @@ get_header(); ?>
                     <hr class="my-4">
                     <div class="flex items-center gap-2">
                         <div>
-                            <img class="aspect-square max-h-12 object-contain"
+                            <img loading="lazy" class="aspect-square max-h-12 object-contain"
                                 src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/chain.png" alt="">
                         </div>
                         <div class="text-sm font-medium text-deep-forest">Silver Ocean Rim pendant with Chain</div>
@@ -1196,7 +1194,7 @@ get_header(); ?>
                                 </div>
                             </div>
                             <div class="rounded-xl overflow-hidden">
-                                <img class="w-full max-h-28 object-cover"
+                                <img loading="lazy" class="w-full max-h-28 object-cover"
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/shop-by-1.png" alt="">
                             </div>
 
@@ -1205,7 +1203,7 @@ get_header(); ?>
                     <hr class="my-4">
                     <div class="flex items-center gap-2">
                         <div>
-                            <img class="aspect-square max-h-12 object-contain"
+                            <img loading="lazy" class="aspect-square max-h-12 object-contain"
                                 src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/chain.png" alt="">
                         </div>
                         <div class="text-sm font-medium text-deep-forest">Silver Ocean Rim pendant with Chain</div>
@@ -1257,7 +1255,7 @@ get_header(); ?>
                                 </div>
                             </div>
                             <div class="rounded-xl overflow-hidden">
-                                <img class="w-full max-h-28 object-cover"
+                                <img loading="lazy" class="w-full max-h-28 object-cover"
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/shop-by-1.png" alt="">
                             </div>
 
@@ -1266,7 +1264,7 @@ get_header(); ?>
                     <hr class="my-4">
                     <div class="flex items-center gap-2">
                         <div>
-                            <img class="aspect-square max-h-12 object-contain"
+                            <img loading="lazy" class="aspect-square max-h-12 object-contain"
                                 src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/chain.png" alt="">
                         </div>
                         <div class="text-sm font-medium text-deep-forest">Silver Ocean Rim pendant with Chain</div>
@@ -1318,7 +1316,7 @@ get_header(); ?>
                                 </div>
                             </div>
                             <div class="rounded-xl overflow-hidden">
-                                <img class="w-full max-h-28 object-cover"
+                                <img loading="lazy" class="w-full max-h-28 object-cover"
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/shop-by-1.png" alt="">
                             </div>
 
@@ -1327,7 +1325,7 @@ get_header(); ?>
                     <hr class="my-4">
                     <div class="flex items-center gap-2">
                         <div>
-                            <img class="aspect-square max-h-12 object-contain"
+                            <img loading="lazy" class="aspect-square max-h-12 object-contain"
                                 src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/chain.png" alt="">
                         </div>
                         <div class="text-sm font-medium text-deep-forest">Silver Ocean Rim pendant with Chain</div>
@@ -1377,7 +1375,7 @@ get_header(); ?>
 
                         <div class="rounded-3xl overflow-hidden">
                             <a href="https://www.instagram.com/zilara_jewellery" target="_blank">
-                                <img class="aspect-square object-cover h-full w-full"
+                                <img loading="lazy" class="aspect-square object-cover h-full w-full"
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/instagram1.jpg" alt="">
                             </a>
 
@@ -1388,7 +1386,7 @@ get_header(); ?>
 
                         <div class="rounded-3xl overflow-hidden">
                             <a href="https://www.instagram.com/zilara_jewellery" target="_blank">
-                                <img class="aspect-square object-cover h-full w-full"
+                                <img loading="lazy" class="aspect-square object-cover h-full w-full"
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/instagram2.jpg" alt="">
                             </a>
 
@@ -1399,7 +1397,7 @@ get_header(); ?>
 
                         <div class="rounded-3xl overflow-hidden">
                             <a href="https://www.instagram.com/zilara_jewellery" target="_blank">
-                                <img class="aspect-square object-cover h-full w-full"
+                                <img loading="lazy" class="aspect-square object-cover h-full w-full"
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/instagram3.jpg" alt="">
                             </a>
 
@@ -1410,7 +1408,7 @@ get_header(); ?>
 
                         <div class="rounded-3xl overflow-hidden">
                             <a href="https://www.instagram.com/zilara_jewellery" target="_blank">
-                                <img class="aspect-square object-cover h-full w-full"
+                                <img loading="lazy" class="aspect-square object-cover h-full w-full"
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/instagram4.jpg" alt="">
                             </a>
 
@@ -1421,7 +1419,7 @@ get_header(); ?>
 
                         <div class="rounded-3xl overflow-hidden">
                             <a href="https://www.instagram.com/zilara_jewellery" target="_blank">
-                                <img class="aspect-square object-cover h-full w-full"
+                                <img loading="lazy" class="aspect-square object-cover h-full w-full"
                                     src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/instagram5.jpg" alt="">
                             </a>
 
@@ -1448,8 +1446,51 @@ get_header(); ?>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
+
 <!-- Initialize Swiper -->
 <script>
+      let swiper6 = new Swiper(".collection-slider-desktop .swiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: false,
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1240: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+        },
+    });
+
+    let swiper7 = new Swiper(".collection-slider-mobile .swiper", {
+        slidesPerView: 3.5,
+        spaceBetween: 10,
+        loop: false,
+        breakpoints: {
+            640: {
+                slidesPerView: 4.5,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+            1240: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+        },
+    });
+
+
     let swiper1 = new Swiper(".section4 .desktop .mySwiper", {
         navigation: {
             nextEl: ".section4 .desktop .button-next",
@@ -1538,46 +1579,7 @@ get_header(); ?>
     });
 
 
-    let swiper6 = new Swiper(".collection-slider-desktop .swiper", {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        loop: false,
-        breakpoints: {
-            640: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-            },
-            1240: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-            },
-        },
-    });
-
-    let swiper7 = new Swiper(".collection-slider-mobile .swiper", {
-        slidesPerView: 3.5,
-        spaceBetween: 10,
-        loop: false,
-        breakpoints: {
-            640: {
-                slidesPerView: 4.5,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-            },
-            1240: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-            },
-        },
-    });
-
+  
 
     let swiper8 = new Swiper(".new-arrivals .swiper", {
         slidesPerView: 1.3,

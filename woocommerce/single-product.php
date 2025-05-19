@@ -37,8 +37,11 @@ do_action('woocommerce_before_main_content');
 
 <?php wc_get_template_part('content', 'single-product'); ?>
 
+
 <?php endwhile; // end of the loop. 
 ?>
+
+
 
 <?php
 /**
@@ -205,7 +208,7 @@ do_action('woocommerce_sidebar');
 
                         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
                                 TO CART</button>
                         </div>
                     </div>
@@ -265,7 +268,7 @@ do_action('woocommerce_sidebar');
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg" alt="">
                         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
                                 TO CART</button>
                         </div>
                     </div>
@@ -325,7 +328,7 @@ do_action('woocommerce_sidebar');
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg" alt="">
                         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
                                 TO CART</button>
                         </div>
                     </div>
@@ -385,7 +388,7 @@ do_action('woocommerce_sidebar');
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg" alt="">
                         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
                                 TO CART</button>
                         </div>
                     </div>
@@ -445,7 +448,7 @@ do_action('woocommerce_sidebar');
 
                         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
                                 TO CART</button>
                         </div>
                     </div>
@@ -505,7 +508,7 @@ do_action('woocommerce_sidebar');
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg" alt="">
                         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
                                 TO CART</button>
                         </div>
                     </div>
@@ -565,7 +568,7 @@ do_action('woocommerce_sidebar');
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg" alt="">
                         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
                                 TO CART</button>
                         </div>
                     </div>
@@ -625,7 +628,7 @@ do_action('woocommerce_sidebar');
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg" alt="">
                         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-4 !py-2">ADD
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
                                 TO CART</button>
                         </div>
                     </div>

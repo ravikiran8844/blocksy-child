@@ -31,6 +31,7 @@ do_action('blocksy:footer:after');
 <div class="h-[1px] mb-8 bg-deep-forest w-full"></div>
 
 	<div class="grid lg:grid-cols-[40%_auto] gap-6 max-lg:divide-y lg:divide-x divide-deep-forest">
+		<form>
 		<div class="max-lg:pb-6 lg:pe-6">
 			<div class="flex items-start gap-4 mb-4">
 				<div>
@@ -46,13 +47,17 @@ do_action('blocksy:footer:after');
 				</div>
 			</div>
 			<div class="flex flex-col gap-2 mb-4">
-				<input class="w-full !p-2 !px-4 !bg-white !rounded-full !text-sm !h-10 !border !border-deep-forest" type="email" placeholder="EMAIL ADDRESS" name="" id="">
+				<input required class="w-full !p-2 !px-4 !bg-white !rounded-full !text-sm !h-10 !border !border-deep-forest" type="email" placeholder="EMAIL ADDRESS" name="" id="">
 				<input class="w-full !p-2 !px-4 !bg-white !rounded-full  !text-sm !h-10 !border !border-deep-forest" type="phone" placeholder="PHONE NUMBER" name="" id="">
 			</div>
 			<div class="text-xs">
 				By clicking Sign Up, you agree to receive marketing text messages from Ziara at the number provided, including messages sent by autodialer. Consent is not a condition of any purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy and Terms of Service.
 			</div>
+			<div class="mt-4">
+				<button class="!px-6 !py-2 !bg-transparent !text-deep-forest cursor-pointer !border !border-deep-forest !rounded-full">Sign Up</button>
+			</div>
 		</div>
+		</form>
 
 		<div>
 			<div class="flex gap-10 flex-wrap justify-between">

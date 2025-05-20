@@ -67,7 +67,7 @@ if (post_password_required()) {
 
 		<div>
 			<div>
-				<div class="mt-4 flex gap-10 flex-wrap">
+				<div class="mt-4 flex gap-6 md:gap-10 flex-wrap">
 					<div class="grid grid-rows-[40px_auto] gap-2 text-sm text-center">
 						<div>
 							<svg class="size-10 mx-auto" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -147,7 +147,7 @@ if (post_password_required()) {
 			<div class="uppercase text-sm text-deep-forest font-semibold">Certificates</div>
 
 
-			<div class="mt-4 flex gap-10 flex-wrap">
+			<div class="mt-4 flex gap-6 md:gap-10 flex-wrap">
 				<div class="grid grid-cols-[40px_auto] gap-2 text-sm">
 					<div>
 						<svg class="size-10" xmlns="http://www.w3.org/2000/svg" width="46" height="46"

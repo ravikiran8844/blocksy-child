@@ -76,3 +76,11 @@ body.product-template-default{
 .ct-checkbox{
     @apply !border-[#3B4443] !rounded-sm;
 }
+
+.single-product .woocommerce-Price-amount.amount{
+    @apply !text-terra-cota !font-semibold;
+}
+
+.single-product .sale-price del .woocommerce-Price-amount.amount{
+    @apply !text-sage;
+}

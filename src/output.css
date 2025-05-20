@@ -204,9 +204,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -218,9 +215,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
@@ -309,9 +303,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .aspect-\[767\/1174\] {
     aspect-ratio: 767/1174;
   }
@@ -348,29 +339,14 @@
   .h-full {
     height: 100%;
   }
-  .max-h-10 {
-    max-height: calc(var(--spacing) * 10);
-  }
   .max-h-12 {
     max-height: calc(var(--spacing) * 12);
-  }
-  .max-h-20 {
-    max-height: calc(var(--spacing) * 20);
   }
   .max-h-28 {
     max-height: calc(var(--spacing) * 28);
   }
-  .max-h-32 {
-    max-height: calc(var(--spacing) * 32);
-  }
-  .max-h-38 {
-    max-height: calc(var(--spacing) * 38);
-  }
   .max-h-40 {
     max-height: calc(var(--spacing) * 40);
-  }
-  .max-h-228 {
-    max-height: calc(var(--spacing) * 228);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -396,19 +372,8 @@
   .flex-grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -606,6 +571,9 @@
   .\!bg-\[\#B05B3C\] {
     background-color: #B05B3C !important;
   }
+  .\!bg-transparent {
+    background-color: transparent !important;
+  }
   .\!bg-white {
     background-color: var(--color-white) !important;
   }
@@ -796,9 +764,6 @@
   .line-through {
     text-decoration-line: line-through;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .\!underline-offset-2 {
     text-underline-offset: 2px !important;
   }
@@ -819,10 +784,6 @@
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
@@ -878,6 +839,16 @@
   .md\:aspect-\[192\/77\] {
     @media (width >= 48rem) {
       aspect-ratio: 192/77;
+    }
+  }
+  .md\:gap-10 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:p-8 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 8);
     }
   }
   .md\:p-10 {
@@ -1060,6 +1031,14 @@ body.product-template-default {
   border-radius: var(--radius-sm) !important;
   border-color: #3B4443 !important;
 }
+.single-product .woocommerce-Price-amount.amount {
+  --tw-font-weight: var(--font-weight-semibold) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  color: var(--color-terra-cota) !important;
+}
+.single-product .sale-price del .woocommerce-Price-amount.amount {
+  color: var(--color-sage) !important;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -1159,11 +1138,6 @@ body.product-template-default {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-divide-y-reverse {
   syntax: "*";
   inherits: false;
@@ -1198,7 +1172,6 @@ body.product-template-default {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-divide-y-reverse: 0;
       --tw-divide-x-reverse: 0;
     }

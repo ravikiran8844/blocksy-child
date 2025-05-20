@@ -85,7 +85,7 @@ get_header(); ?>
                         srcset="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/hero.jpg">
                     <source media="(max-width: 768px)"
                         srcset="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/hero-mobile.jpg">
-                    <img loading="eager" class="w-full"
+                    <img fetchpriority="high"  loading="eager" class="w-full"
                         src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/hero-mobile.jpg" alt="main banner">
                 </picture>
             </a>

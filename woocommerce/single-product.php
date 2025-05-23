@@ -713,7 +713,7 @@ do_action('woocommerce_sidebar');
 
 </section>
 
-
+f
 <section class="ct-container">
     <div class="max-w-3xl mx-auto py-12">
         <div class="text-2xl lg:text-3xl text-deep-forest italic lora mb-8 text-center">Customer Reviews

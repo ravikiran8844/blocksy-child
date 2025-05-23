@@ -23,3 +23,25 @@ function rk_add_product_subtitle_below_title() {
     // Example: Static subtitle text (you can replace this with dynamic logic)
     echo '<p class="product-subtitle" style="margin-bottom:10px; font-size:16px; color:#666;">This is a subtitle or additional info</p>';
 }
+
+
+add_action( 'template_redirect', 'handle_buy_now_redirect' );
+
+function handle_buy_now_redirect() {
+	if ( isset( $_POST['buy_now'] ) && is_numeric( $_POST['buy_now'] ) ) {
+		$product_id = intval( $_POST['buy_now'] );
+
+		// Clear the cart first
+		WC()->cart->empty_cart();
+
+		// Add selected product to cart
+		$quantity = isset( $_POST['quantity'] ) ? intval( $_POST['quantity'] ) : 1;
+		WC()->cart->add_to_cart( $product_id, $quantity );
+
+		// Redirect to checkout
+		wp_safe_redirect( wc_get_checkout_url() );
+		exit;
+	}
+}
+
+

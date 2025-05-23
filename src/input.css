@@ -44,7 +44,7 @@ body {
 }
 
 .single_add_to_cart_button {
-    @apply !bg-transparent !rounded-full !uppercase !font-medium !border !border-deep-forest !text-deep-forest hover:!bg-deep-forest hover:!text-white;    
+    @apply !bg-transparent  !rounded-full !uppercase !font-medium !border !border-deep-forest !text-deep-forest hover:!bg-deep-forest hover:!text-white;    
 }
 
 .buy-now-button{
@@ -66,9 +66,9 @@ body.product-template-default{
     @apply !bg-[#F4F5F4];
 }
 
-/* .button.add_to_cart_button{
+.button.add_to_cart_button{
     @apply !uppercase !text-sm cursor-pointer !bg-white !text-sage text-center !rounded-full !px-6 !py-2 !shadow !w-full max-w-2/3;
-} */
+}
 /* .added_to_cart.wc-forward{
     @apply hidden;
 } */
@@ -83,4 +83,8 @@ body.product-template-default{
 
 .single-product .sale-price del .woocommerce-Price-amount.amount{
     @apply !text-sage;
+}
+
+.added_to_cart.wc-forward{
+    @apply !hidden;
 }

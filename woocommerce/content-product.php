@@ -43,7 +43,7 @@ $sale_price = $product->get_sale_price();
 $weight = $product->get_weight(); // Make sure weight is set in the product
 
 ?>
-<li <?php wc_product_class( 'group', $product ); ?>>
+<li <?php wc_product_class( 'group !p-0', $product ); ?>>
     <div>
         <div class="relative">
             <a href="<?php echo esc_url( $product_link ); ?>">
@@ -55,7 +55,7 @@ $weight = $product->get_weight(); // Make sure weight is set in the product
 			
         </div>
 
-        <div class="p-4 space-y-1 bg-white">
+        <div class="p-4 space-y-1 bg-white border-t border-gray-200">
             <!-- Static star SVG (optional: make dynamic using rating if needed) -->
             <!-- You can include the star SVG here directly or use WooCommerce rating -->
             <div>

@@ -47,14 +47,14 @@ if ($product->is_in_stock()) : ?>
 		do_action('woocommerce_after_add_to_cart_quantity');
 		?>
 
-		<div class="grid grid-cols-2 gap-4 mt-6">
+		<div class="grid grid-cols-2 gap-4 mt-2">
 			<button type="submit" name="add-to-cart" value="<?php echo esc_attr($product->get_id()); ?>" class="single_add_to_cart_button !rounded-full !w-full !min-w-full button alt<?php echo esc_attr(wc_wp_theme_get_element_class_name('button') ? ' ' . wc_wp_theme_get_element_class_name('button') : ''); ?>">
 				<?php echo esc_html($product->single_add_to_cart_text()); ?>
 			</button>
 
-			<button type="submit" name="buy_now" value="<?php echo esc_attr($product->get_id()); ?>" class="buy_now_button button !bg-terra-cota !text-white !rounded-full !w-full">
+			<!-- <button type="submit" name="buy_now" value="<?php echo esc_attr($product->get_id()); ?>" class="buy_now_button button !bg-terra-cota !text-white !rounded-full !w-full">
 				Buy Now
-			</button>
+			</button> -->
 		</div>
 
 

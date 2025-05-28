@@ -28,7 +28,7 @@ do_action('blocksy:footer:after');
 
 <div class="py-3 md:py-4 ct-container">
 
-	<div class="h-[1px] mb-8 bg-deep-forest w-full"></div>
+	<div class="h-[1px] my-8 bg-deep-forest w-full"></div>
 
 	<div class="grid lg:grid-cols-[40%_auto] gap-6 max-lg:divide-y lg:divide-x divide-deep-forest">
 		<form>
@@ -192,8 +192,8 @@ do_action('blocksy:footer:after');
 
 
 					<div class="flex gap-4">
-						<div><a href="#" class="!underline !underline-offset-2">Privacy Policy</a></div>
-						<div><a href="#" class="!underline !underline-offset-2">Terms & Conditions</a></div>
+						<div><a href="#" class="!underline !underline-offset-2 !text-deep-forest">Privacy Policy</a></div>
+						<div><a href="#" class="!underline !underline-offset-2 !text-deep-forest">Terms & Conditions</a></div>
 					</div>
 				</div>
 			</div>

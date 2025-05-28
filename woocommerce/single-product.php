@@ -22,15 +22,7 @@ if (! defined('ABSPATH')) {
 
 get_header('shop'); ?>
 
-<?php
-/**
- * woocommerce_before_main_content hook.
- *
- * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
- * @hooked woocommerce_breadcrumb - 20
- */
-do_action('woocommerce_before_main_content');
-?>
+
 
 <?php while (have_posts()) : ?>
 <?php the_post(); ?>
@@ -61,7 +53,7 @@ do_action('woocommerce_after_main_content');
 do_action('woocommerce_sidebar');
 ?>
 
-<section class="ct-container">
+<section class="ct-container pt-16">
     <div class="bg-white rounded-xl p-4 md:p-10">
         <div class="grid lg:grid-cols-2 gap-4">
             <div>
@@ -79,7 +71,7 @@ do_action('woocommerce_sidebar');
                     <div>Need help to find the best jewellery for you ?</div>
                     <div>We are available for your assistance</div>
 
-                    <div class="grid grid-cols-2 gap-4 mt-6">
+                    <div class="grid grid-cols-2 gap-4 mt-2">
                         <div class="flex items-center flex-col gap-2">
                             <div>
                                 <svg class="size-10" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
@@ -194,6 +186,8 @@ do_action('woocommerce_sidebar');
         </div>
     </div>
 </section>
+
+
 
 <section class="ct-container py-8 md:py-12 lg:py-16 similar-products">
     <div class="text-2xl lg:text-3xl text-deep-forest italic lora mb-8 text-center">Similar Products</div>
@@ -713,7 +707,6 @@ do_action('woocommerce_sidebar');
 
 </section>
 
-f
 <section class="ct-container">
     <div class="max-w-3xl mx-auto py-12">
         <div class="text-2xl lg:text-3xl text-deep-forest italic lora mb-8 text-center">Customer Reviews

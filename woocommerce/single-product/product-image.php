@@ -56,5 +56,9 @@ $wrapper_classes   = apply_filters(
 
 		do_action( 'woocommerce_product_thumbnails' );
 		?>
+
+		
 	</div>
+
+	
 </div>

@@ -32,7 +32,9 @@ if (post_password_required()) {
 	return;
 }
 ?>
+
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
+
 
 
 
@@ -44,7 +46,11 @@ if (post_password_required()) {
 	 * @hooked woocommerce_show_product_images - 20
 	 */
 	do_action('woocommerce_before_single_product_summary');
+
+    
 	?>
+
+   
 
     <div class="summary entry-summary">
         <?php
@@ -271,28 +277,3 @@ if (post_password_required()) {
 
 <?php do_action('woocommerce_after_single_product'); ?>
 
-
-
-<script>
-jQuery(function($) {
-  $('form.variations_form').on('click', '.buy_now_button', function(e) {
-    const $form = $(this).closest('form.variations_form');
-
-    // Trigger variation data update
-    $form.find('.single_add_to_cart_button').trigger('click');
-
-    // Ensure variation ID is updated
-    const variation_id = $form.find('input.variation_id').val();
-
-    if (!variation_id || variation_id === '0') {
-      e.preventDefault();
-      alert('Please select product options before proceeding.');
-      return false;
-    }
-
-    // Change form action to stay on page (avoid conflict)
-    $form.append('<input type="hidden" name="buy_now" value="1" />');
-    return true;
-  });
-});
-</script>

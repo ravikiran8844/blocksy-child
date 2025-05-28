@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
-
 @theme {
 
     --color-sage: #667B68;
     --color-terra-cota: #B05C3C;
     --color-deep-forest: #3B4443;
     --color-oat: #F0E9E1;
+    
 
 }
 
-
+*{
+    --swiper-scrollbar-size: 2px;
+    --swiper-scrollbar-drag-bg-color:#3D3D3D;
+    --swiper-scrollbar-bg-color:#CECECE;
+}
 .lora {
     font-family: "Lora", serif;
 }
@@ -44,7 +48,7 @@ body {
 }
 
 .single_add_to_cart_button {
-    @apply !bg-transparent  !rounded-full !uppercase !font-medium !border !border-deep-forest !text-deep-forest hover:!bg-deep-forest hover:!text-white;    
+    @apply  !rounded-full !uppercase !font-medium !border !bg-terra-cota !text-white;    
 }
 
 .buy-now-button{
@@ -87,4 +91,61 @@ body.product-template-default{
 
 .added_to_cart.wc-forward{
     @apply !hidden;
+}
+
+.ct-header-cart svg{
+    @apply !fill-none hover:!fill-none;
+}
+
+.ct-cart-actions .quantity .input-text.qty{
+    @apply !border-none !outline-none;
+}
+
+.ct-cart-actions .quantity[data-type=type-2] .ct-increase,.ct-cart-actions .quantity[data-type=type-2] .ct-decrease{
+    @apply !bg-white !border !border-[#D9E2DA] !rounded-full !text-deep-forest !size-8;
+}
+
+.ct-cart-actions div.quantity .ct-increase~input[type=number]:focus,.ct-cart-actions div.quantity .ct-decrease~input[type=number]:focus{
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+/* .product-template-default .is-width-constrained {
+    width: 100% !important;
+} */
+
+/* @media screen and (max-width: 1000px) {
+    .ct-container-full{
+        background: linear-gradient(to bottom, #ffffff 50%, #F4F5F4 50%);
+    
+    }
+    
+    .ct-default-gallery .product-entry-wrapper, .ct-stacked-gallery .product-entry-wrapper {
+        gap: 60px !important;
+    }
+    
+} */
+/* 
+@media screen and (min-width: 1000px) {
+    .ct-container-full{
+        background: linear-gradient(to right, #ffffff 50%, #F4F5F4 50%);
+    
+    }
+    
+    .ct-default-gallery .product-entry-wrapper, .ct-stacked-gallery .product-entry-wrapper {
+        gap: 60px !important;
+    }
+    
+} */
+
+.product-template-default .is-width-constrained{
+    width: 100% !important;
+}
+.woocommerce-product-gallery{
+    @apply !bg-white p-6 md:p-10 lg:p-12 xl:p-16;
+}
+
+.ct-default-gallery .entry-summary, .ct-stacked-gallery .entry-summary{
+    @apply !ml-0 p-6 md:p-10 lg:p-12 xl:p-16;
 }

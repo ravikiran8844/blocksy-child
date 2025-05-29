@@ -20,15 +20,15 @@ function my_theme_enqueue_styles()
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 
 
-add_action('woocommerce_single_product_summary', 'rk_add_product_subtitle_below_title', 6);
+// add_action('woocommerce_single_product_summary', 'rk_add_product_subtitle_below_title', 6);
 
-function rk_add_product_subtitle_below_title()
-{
-	global $product;
+// function rk_add_product_subtitle_below_title()
+// {
+// 	global $product;
 
-	// Example: Static subtitle text (you can replace this with dynamic logic)
-	echo '<p class="product-subtitle" style="margin-bottom:10px; font-size:16px; color:#666;">This is a subtitle or additional info</p>';
-}
+// 	// Example: Static subtitle text (you can replace this with dynamic logic)
+// 	echo '<p class="product-subtitle" style="margin-bottom:10px; font-size:16px; color:#666;">This is a subtitle or additional info</p>';
+// }
 
 
 // add_action('template_redirect', 'handle_buy_now_redirect');
@@ -51,37 +51,13 @@ function rk_add_product_subtitle_below_title()
 // 	}
 // }
 
-add_action('rest_api_init', function () {
-    register_rest_route('custom/v1', '/get-variation-id', [
-        'methods' => 'GET',
-        'callback' => 'get_variation_id_from_attributes',
-        'permission_callback' => '__return_true',
-    ]);
-});
+add_action('woocommerce_product_thumbnails', 'custom_text_block_below_thumbnails', 20);
 
-function get_variation_id_from_attributes($request) {
-    $product_id = intval($request['product_id']);
-    $attrs = json_decode(stripslashes($request['attrs']), true);
-
-    $product = wc_get_product($product_id);
-    if (!$product || !$product->is_type('variable')) {
-        return [ 'success' => false, 'message' => 'Invalid product.' ];
-    }
-
-    $variations = $product->get_available_variations();
-    foreach ($variations as $variation) {
-        $match = true;
-        foreach ($attrs as $key => $val) {
-            $attr_key = 'attribute_' . sanitize_title($key);
-            if (!isset($variation['attributes'][$attr_key]) || $variation['attributes'][$attr_key] !== $val) {
-                $match = false;
-                break;
-            }
-        }
-        if ($match) {
-            return [ 'success' => true, 'variation_id' => $variation['variation_id'] ];
-        }
-    }
-
-    return [ 'success' => false, 'message' => 'No matching variation found.' ];
+function custom_text_block_below_thumbnails() {
+    ?>
+    <div class="bg-[#FCF7F3] p-6 ms-auto mt-12">
+        <div class="text-xl md:text-2xl lora italic text-[#B05B3C] mb-2">Jewellery Care</div>
+        <div class="text-deep-forest text-sm md:text-md">Explore our Divine collection by Jewel One featuring a spectrum of deities, each idol resonating with spiritual significance.</div>
+    </div>
+    <?php
 }

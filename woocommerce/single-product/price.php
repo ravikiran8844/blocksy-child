@@ -22,7 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>">
-    <?php echo $product->get_price_html(); ?></p>
+<div class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?> !mb-0">
+    <?php echo $product->get_price_html(); ?></div>
+
+<div class="text-sm text-deep-forest">(MRP Incl. of all taxes)</div>
 
 	

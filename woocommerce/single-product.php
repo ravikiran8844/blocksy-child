@@ -17,7 +17,7 @@
  */
 
 if (! defined('ABSPATH')) {
-	exit; // Exit if accessed directly
+    exit; // Exit if accessed directly
 }
 
 get_header('shop'); ?>
@@ -25,9 +25,9 @@ get_header('shop'); ?>
 
 
 <?php while (have_posts()) : ?>
-<?php the_post(); ?>
+    <?php the_post(); ?>
 
-<?php wc_get_template_part('content', 'single-product'); ?>
+    <?php wc_get_template_part('content', 'single-product'); ?>
 
 
 <?php endwhile; // end of the loop. 
@@ -54,12 +54,12 @@ do_action('woocommerce_sidebar');
 ?>
 
 <section class="ct-container pt-16">
-    <div class="bg-white rounded-xl p-4 md:p-10">
-        <div class="grid lg:grid-cols-2 gap-4">
+    <div class="bg-white rounded-xl p-4 md:p-10 lg:p-16 xl:p-20">
+        <div class="grid lg:grid-cols-[45%_auto] gap-10 lg:gap-16 xl:gap-20">
             <div>
                 <div class="space-y-4 text-deep-forest">
-                    <div class="italic lora text-2xl lg:text-3xl">Description</div>
-                    <div class="text-lg font-medium">Divine Collection</div>
+                    <div class="italic lora text-2xl">Description</div>
+                    <div class="text-lg font-semibold">Divine Collection</div>
                     <div>Explore our Divine collection by Jewel One featuring a spectrum of deities, each idol
                         resonating
                         with spiritual significance. Our idols cater to a diverse range of tastes, making them ideal for
@@ -71,9 +71,10 @@ do_action('woocommerce_sidebar');
                     <div>Need help to find the best jewellery for you ?</div>
                     <div>We are available for your assistance</div>
 
-                    <div class="grid grid-cols-2 gap-4 mt-2">
+                    <div class="grid grid-cols-2 gap-4 mt-4">
                         <div class="flex items-center flex-col gap-2">
                             <div>
+                                <a href="tel: +918220017619">
                                 <svg class="size-10" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
                                     viewBox="0 0 48 48" fill="none">
                                     <rect width="48" height="48" rx="24" fill="white" />
@@ -81,6 +82,7 @@ do_action('woocommerce_sidebar');
                                         d="M36.6309 30.2894V34.0947C36.6309 35.4688 35.5312 36.6316 34.2315 36.6316C34.1316 36.6316 34.0316 36.6316 34.0316 36.6316C30.3327 36.2088 26.7337 34.8346 23.6346 32.7205C20.7354 30.8179 18.2361 28.1753 16.4367 25.1099C14.3373 21.8331 13.0376 18.0277 12.6378 14.1167C12.5378 12.6369 13.5375 11.4741 14.8371 11.3684C14.9371 11.3684 14.9371 11.3684 15.0371 11.3684H18.636C19.8357 11.3684 20.8354 12.3197 21.0353 13.5882C21.2353 14.8566 21.4352 16.0194 21.8351 17.1821C22.135 18.1334 21.9351 19.1905 21.3353 19.8247L19.8357 21.4102C21.5352 24.5814 24.0345 27.2239 27.0336 29.0209L28.5332 27.4354C29.233 26.6954 30.2327 26.484 31.0325 26.9068C32.1322 27.3296 33.2318 27.6468 34.4315 27.7525C35.7311 27.8582 36.6309 29.0209 36.6309 30.2894Z"
                                         fill="#667B68" />
                                 </svg>
+                                </a>
                             </div>
 
                             <div>
@@ -88,7 +90,9 @@ do_action('woocommerce_sidebar');
                             </div>
                         </div>
                         <div class="flex items-center flex-col gap-2">
-                            <div><svg class="size-10" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                            <div>
+                                <a href="https://api.whatsapp.com/send/?phone=918220017619">
+                                <svg class="size-10" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
                                     viewBox="0 0 48 48" fill="none">
                                     <rect width="48" height="48" rx="24" fill="white" />
                                     <path
@@ -97,7 +101,9 @@ do_action('woocommerce_sidebar');
                                     <path
                                         d="M26.8586 31C26.553 30.9586 26.2348 30.9602 25.9427 30.8682C24.2978 30.3493 22.7253 29.6664 21.382 28.4673C20.3368 27.5339 19.4631 26.4296 18.6251 25.2865C18.0761 24.5383 17.6035 23.7433 17.2888 22.8458C16.7042 21.1784 17.0194 19.7049 18.1233 18.4083C18.2208 18.2884 18.3396 18.1911 18.4726 18.1223C18.6057 18.0536 18.7502 18.0147 18.8975 18.008C19.1891 17.995 19.4822 17.9982 19.7738 18.0151C20.0251 18.0298 20.1483 18.2362 20.2388 18.4556C20.3992 18.8434 20.547 19.2365 20.6988 19.6281C20.9029 20.153 21.101 20.6802 21.3116 21.2024C21.4031 21.43 21.4051 21.6484 21.2749 21.8466C21.0336 22.2142 20.7863 22.5785 20.5248 22.9292C20.2494 23.2995 20.2338 23.3964 20.456 23.7955C21.4765 25.6291 22.8831 26.9774 24.7231 27.7822C25.1087 27.9505 25.2479 27.9238 25.5088 27.5818C25.8105 27.1843 26.1121 26.7846 26.4077 26.3789C26.6224 26.0832 26.738 26.0228 27.0753 26.1556C27.4126 26.2885 27.7354 26.4573 28.0642 26.6114C28.5795 26.8532 29.0963 27.0912 29.6075 27.3411C29.9705 27.5181 30.0042 27.6134 29.9996 28.0322C29.98 29.8837 28.6503 30.7005 27.389 30.9406C27.2171 30.9733 27.0371 30.9673 26.8642 30.9793L26.8586 31Z"
                                         fill="#667B68" />
-                                </svg></div>
+                                </svg>
+                                </a>
+                            </div>
                             <div>Chat with Experts</div>
                         </div>
                     </div>
@@ -106,7 +112,14 @@ do_action('woocommerce_sidebar');
             <div>
                 <div class="bg-[#F4F5F4] border border-[#F0F0F0] rounded-xl p-4 md:p-8 text-md h-full">
 
+
                     <ul class="!space-y-4 list-none !ms-0 !ps-0">
+                        <li class="grid grid-cols-[32px_auto] gap-2">
+                            <div>
+                            </div>
+                            <div class="text-[#B05B3C] text-2xl lora italic">About the Product</div>
+
+                        </li>
                         <li class="grid grid-cols-[32px_auto] gap-2">
                             <div>
                                 <img class="size-8"
@@ -200,10 +213,28 @@ do_action('woocommerce_sidebar');
                     <div class="relative">
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg" alt="">
 
-                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                        <div x-data="{ loading: false }" class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
-                                TO CART</button>
+                                @click="loading = true; setTimeout(() => loading = false, 2000)"
+                                :disabled="loading"
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                                <template x-if="!loading">
+                                    <span>ADD TO CART</span>
+                                </template>
+
+                                <template x-if="loading">
+                                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24">
+                                        <path
+                                            d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900">
+                                        </path>
+                                    </svg>
+                                </template>
+                            </button>
                         </div>
                     </div>
                     <div class="p-4 space-y-1 bg-white">
@@ -260,10 +291,28 @@ do_action('woocommerce_sidebar');
                 <div class="group shadow">
                     <div class="relative">
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg" alt="">
-                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                        <div x-data="{ loading: false }" class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
-                                TO CART</button>
+                                @click="loading = true; setTimeout(() => loading = false, 2000)"
+                                :disabled="loading"
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                                <template x-if="!loading">
+                                    <span>ADD TO CART</span>
+                                </template>
+
+                                <template x-if="loading">
+                                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24">
+                                        <path
+                                            d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900">
+                                        </path>
+                                    </svg>
+                                </template>
+                            </button>
                         </div>
                     </div>
                     <div class="p-4 space-y-1 bg-white">
@@ -320,10 +369,28 @@ do_action('woocommerce_sidebar');
                 <div class="group shadow">
                     <div class="relative">
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg" alt="">
-                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                        <div x-data="{ loading: false }" class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
-                                TO CART</button>
+                                @click="loading = true; setTimeout(() => loading = false, 2000)"
+                                :disabled="loading"
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                                <template x-if="!loading">
+                                    <span>ADD TO CART</span>
+                                </template>
+
+                                <template x-if="loading">
+                                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24">
+                                        <path
+                                            d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900">
+                                        </path>
+                                    </svg>
+                                </template>
+                            </button>
                         </div>
                     </div>
                     <div class="p-4 space-y-1 bg-white">
@@ -380,10 +447,28 @@ do_action('woocommerce_sidebar');
                 <div class="group shadow">
                     <div class="relative">
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg" alt="">
-                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                        <div x-data="{ loading: false }" class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
-                                TO CART</button>
+                                @click="loading = true; setTimeout(() => loading = false, 2000)"
+                                :disabled="loading"
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                                <template x-if="!loading">
+                                    <span>ADD TO CART</span>
+                                </template>
+
+                                <template x-if="loading">
+                                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24">
+                                        <path
+                                            d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900">
+                                        </path>
+                                    </svg>
+                                </template>
+                            </button>
                         </div>
                     </div>
                     <div class="p-4 space-y-1 bg-white">
@@ -440,10 +525,28 @@ do_action('woocommerce_sidebar');
                     <div class="relative">
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg" alt="">
 
-                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                        <div x-data="{ loading: false }" class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
-                                TO CART</button>
+                                @click="loading = true; setTimeout(() => loading = false, 2000)"
+                                :disabled="loading"
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                                <template x-if="!loading">
+                                    <span>ADD TO CART</span>
+                                </template>
+
+                                <template x-if="loading">
+                                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24">
+                                        <path
+                                            d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900">
+                                        </path>
+                                    </svg>
+                                </template>
+                            </button>
                         </div>
                     </div>
                     <div class="p-4 space-y-1 bg-white">
@@ -500,10 +603,28 @@ do_action('woocommerce_sidebar');
                 <div class="group shadow">
                     <div class="relative">
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg" alt="">
-                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                        <div x-data="{ loading: false }" class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
-                                TO CART</button>
+                                @click="loading = true; setTimeout(() => loading = false, 2000)"
+                                :disabled="loading"
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                                <template x-if="!loading">
+                                    <span>ADD TO CART</span>
+                                </template>
+
+                                <template x-if="loading">
+                                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24">
+                                        <path
+                                            d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900">
+                                        </path>
+                                    </svg>
+                                </template>
+                            </button>
                         </div>
                     </div>
                     <div class="p-4 space-y-1 bg-white">
@@ -560,10 +681,28 @@ do_action('woocommerce_sidebar');
                 <div class="group shadow">
                     <div class="relative">
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg" alt="">
-                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                        <div x-data="{ loading: false }" class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
-                                TO CART</button>
+                                @click="loading = true; setTimeout(() => loading = false, 2000)"
+                                :disabled="loading"
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                                <template x-if="!loading">
+                                    <span>ADD TO CART</span>
+                                </template>
+
+                                <template x-if="loading">
+                                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24">
+                                        <path
+                                            d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900">
+                                        </path>
+                                    </svg>
+                                </template>
+                            </button>
                         </div>
                     </div>
                     <div class="p-4 space-y-1 bg-white">
@@ -620,10 +759,28 @@ do_action('woocommerce_sidebar');
                 <div class="group shadow">
                     <div class="relative">
                         <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg" alt="">
-                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+                        <div x-data="{ loading: false }" class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                             <button
-                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2">ADD
-                                TO CART</button>
+                                @click="loading = true; setTimeout(() => loading = false, 2000)"
+                                :disabled="loading"
+                                class="uppercase !text-sm cursor-pointer bg-white text-sage text-center rounded-full !px-6 !py-2 relative flex items-center justify-center w-full h-10 transition-all duration-300">
+                                <template x-if="!loading">
+                                    <span>ADD TO CART</span>
+                                </template>
+
+                                <template x-if="loading">
+                                    <svg class="text-gray-300 animate-spin" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24">
+                                        <path
+                                            d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                                            stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900">
+                                        </path>
+                                    </svg>
+                                </template>
+                            </button>
                         </div>
                     </div>
                     <div class="p-4 space-y-1 bg-white">
@@ -681,24 +838,22 @@ do_action('woocommerce_sidebar');
         <div class="absolute top-1/2 left-0 right-0 z-10">
             <div class="flex justify-between items-center gap-1 relative">
 
-                <button class="button-prev text-white">
-
-                    <svg class="size-10 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                <button class="button-prev">
+                    <svg class="size-8" viewBox="0 0 41 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20.5" cy="20.5" r="20" transform="matrix(-1 0 0 1 41 0)" fill="#667B68" />
+                        <path
+                            d="M26.3508 11.2992C25.8008 10.7492 24.9008 10.7492 24.4008 11.2992L15.6508 19.9992C15.1008 20.5492 15.1008 21.4492 15.6508 21.9492L24.3508 30.6492C24.6008 30.8992 25.0008 31.0492 25.3508 31.0492C25.7008 31.0492 26.0508 30.8992 26.3508 30.6492C26.9008 30.0992 26.9008 29.1992 26.3508 28.6992L18.6508 20.9992L26.3508 13.2992C26.9008 12.7492 26.9008 11.8492 26.3508 11.2992Z"
+                            fill="white" />
                     </svg>
-
 
                 </button>
-                <button class="button-next text-white">
-                    <svg class="size-10 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                <button class="button-next">
+                    <svg class="size-8" viewBox="0 0 41 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20.5" cy="20.5" r="20.5" fill="#667B68" />
+                        <path
+                            d="M14.6492 11.2992C15.1992 10.7492 16.0992 10.7492 16.5992 11.2992L25.3492 19.9992C25.8992 20.5492 25.8992 21.4492 25.3492 21.9492L16.6492 30.6492C16.3992 30.8992 15.9992 31.0492 15.6492 31.0492C15.2992 31.0492 14.9492 30.8992 14.6492 30.6492C14.0992 30.0992 14.0992 29.1992 14.6492 28.6992L22.3492 20.9992L14.6492 13.2992C14.0992 12.7492 14.0992 11.8492 14.6492 11.2992Z"
+                            fill="white" />
                     </svg>
-
-
                 </button>
             </div>
 
@@ -707,7 +862,7 @@ do_action('woocommerce_sidebar');
 
 </section>
 
-<section class="ct-container">
+<section class="ct-container" x-data="{ showForm: false }">
     <div class="max-w-3xl mx-auto py-12">
         <div class="text-2xl lg:text-3xl text-deep-forest italic lora mb-8 text-center">Customer Reviews
         </div>
@@ -716,33 +871,46 @@ do_action('woocommerce_sidebar');
         <div id="existing-reviews" class="space-y-6 mb-8">
             <!-- Dynamically populate with PHP -->
             <?php
-			$comments = get_comments(['post_id' => get_the_ID()]);
-			if ($comments):
-				foreach ($comments as $comment):
-			?>
-            <div class="border-b border-b-gray-300 pb-4">
-                <div class="font-semibold"><?= esc_html($comment->comment_author); ?></div>
-                <div class="text-xs text-gray-500 mb-1">
-                    <?= get_comment_date('F j, Y', $comment) ?> at <?= get_comment_time('g:i A', $comment) ?>
+            $comments = get_comments(['post_id' => get_the_ID()]);
+            if ($comments):
+                foreach ($comments as $comment):
+            ?>
+                    <div class="border-b border-b-gray-300 pb-4">
+                        <div class="font-semibold"><?= esc_html($comment->comment_author); ?></div>
+                        <div class="text-xs text-gray-500 mb-1">
+                            <?= get_comment_date('F j, Y', $comment) ?> at <?= get_comment_time('g:i A', $comment) ?>
+                        </div>
+                        <div class="flex items-center mb-1">
+                            <?php
+                            $rating = intval(get_comment_meta($comment->comment_ID, 'rating', true));
+                            for ($i = 1; $i <= 5; $i++):
+                                echo $i <= $rating ? '⭐' : '☆';
+                            endfor;
+                            ?>
+                        </div>
+                        <div><?= esc_html($comment->comment_content); ?></div>
+                    </div>
+                <?php endforeach; ?>
+                <div class="flex justify-center items-center mt-10" x-show="!showForm" x-cloak>
+                    <button @click="showForm = true" class="bg-[#3B4443] text-white !px-6 !py-2 rounded-full cursor-pointer">
+                        Write a Review
+                    </button>
                 </div>
-                <div class="flex items-center mb-1">
-                    <?php
-							$rating = intval(get_comment_meta($comment->comment_ID, 'rating', true));
-							for ($i = 1; $i <= 5; $i++):
-								echo $i <= $rating ? '⭐' : '☆';
-							endfor;
-							?>
+            <?php
+            else: ?>
+                <div class="grid md:grid-cols-2 gap-4 max-w-md mx-auto" x-show="!showForm" x-cloak>
+                    <div class="text-center md:text-left text-deep-forest m-auto">Be the first to write a review</div>
+                    <div class="text-center md:text-right">
+                        <button @click="showForm = true" class="bg-[#3B4443] text-white !px-6 !py-2 rounded-full cursor-pointer">
+                            Write a Review
+                        </button>
+                    </div>
                 </div>
-                <div><?= esc_html($comment->comment_content); ?></div>
-            </div>
-            <?php endforeach;
-			else: ?>
-            <p class="text-center text-gray-500">Be the first to write a review</p>
             <?php endif; ?>
         </div>
 
         <!-- Review form -->
-        <div x-data="{ rating: 0 }" class="max-w-md mx-auto">
+        <div x-data="{ rating: 0 }" class="max-w-md mx-auto" x-show="showForm" x-cloak>
             <div class="text-md text-center font-medium mb-4">Write a Review</div>
             <form action="<?php echo site_url('/wp-comments-post.php'); ?>" method="POST" class="space-y-4">
                 <p class="text-sm">* Indicates a required field</p>
@@ -792,8 +960,8 @@ do_action('woocommerce_sidebar');
                 </div>
 
                 <div class="flex flex-wrap gap-6 justify-center mt-8">
-                    <!-- <button type="reset" class="!px-6 !py-2 bg-transparent text-deep-forest !rounded-full  !border !border-deep-forest">Cancel
-                        Review</button> -->
+                    <button @click="showForm = false;" class="!px-6 !py-2 cursor-pointer bg-transparent text-deep-forest !rounded-full  !border !border-deep-forest">Cancel
+                        Review</button>
                     <button type="submit" class="!px-6 !py-2 !bg-[#B05B3C] text-white !rounded-full">Submit
                         Review</button>
                 </div>
@@ -838,8 +1006,8 @@ let swiper4 = new Swiper(".similar-products .swiper", {
         prevEl: ".similar-products .button-prev",
     },
     breakpoints: {
-        640: {
-            slidesPerView: 2,
+        460: {
+            slidesPerView: 1.5,
             spaceBetween: 20,
         },
         768: {
@@ -882,6 +1050,7 @@ let swiper4 = new Swiper(".similar-products .swiper", {
         }
     });
 </script>
+
 
 <?php
 get_footer('shop');

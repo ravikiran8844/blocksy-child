@@ -143,9 +143,32 @@ body.product-template-default{
     width: 100% !important;
 }
 .woocommerce-product-gallery{
-    @apply !bg-white p-6 md:p-10 lg:p-12 xl:p-16;
+    @apply !bg-white p-4 md:p-10 lg:p-12 xl:p-16;
 }
 
 .ct-default-gallery .entry-summary, .ct-stacked-gallery .entry-summary{
     @apply !ml-0 p-6 md:p-10 lg:p-12 xl:p-16;
+}
+
+.yith-wcwl-add-to-wishlist-button.yith-wcwl-add-to-wishlist-button--single.yith-wcwl-add-to-wishlist-button--anchor{
+    @apply !text-sage !bg-white shadow p-2 h-10 w-10 rounded-sm;
+}
+.yith-wcwl-add-to-wishlist-button__label{
+    @apply hidden;
+}
+@media (max-width: 999.98px) {
+    div.woocommerce-product-gallery {
+        margin-bottom: 1em !important;
+    }
+}
+
+@media (max-width:480px) {
+    .ct-cart-actions .quantity[data-type=type-2] .ct-increase, .ct-cart-actions .quantity[data-type=type-2] .ct-decrease {
+        top: 5px !important;
+    }
+
+}
+
+button.checkout{
+    @apply  !bg-terra-cota;
 }

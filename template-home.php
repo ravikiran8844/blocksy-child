@@ -97,7 +97,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-16 collection-slider-desktop max-lg:hidden">
+    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-15 collection-slider-desktop max-lg:hidden">
         <div class="text-center space-y-2">
             <div class="text-2xl lg:text-3xl text-deep-forest italic lora">Choose by style</div>
             <div class="text-sage">Where every piece tells a tale.</div>
@@ -176,7 +176,7 @@ get_header(); ?>
     </section>
 
 
-    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-16 products-slider">
+    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-15 products-slider">
 
         <div class="bg-white">
             <div class="py-6 md:px-10 lg:px-14 flex justify-between items-center max-md:hidden">
@@ -528,7 +528,7 @@ get_header(); ?>
 
 
     <section class="section4">
-        <div class="ct-container lg:pt-12 xl:pt-16 max-lg:hidden desktop">
+        <div class="ct-container lg:pt-12 xl:pt-15 max-lg:hidden desktop">
             <div class="grid grid-cols-2 gap-8 bg-white">
                 <div class="rounded-tr-[60px] overflow-hidden rounded-br-[60px]">
                     <img loading="lazy" class="!h-full object-cover w-full"
@@ -769,13 +769,13 @@ get_header(); ?>
 
 
 
-    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-16">
+    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-15">
         <div class="text-center space-y-2">
             <div class="text-2xl lg:text-3xl text-deep-forest italic lora">Our Collection</div>
             <div class="text-sage">Discover our latest jewellery collection!</div>
         </div>
         <div class="grid mt-10 grid-cols-2 sm:grid-cols-3 gap-4 lg:gap-8">
-            <div class="rounded-2xl overflow-hidden col-span-2 sm:col-span-1">
+            <div class="rounded-2xl overflow-hidden col-span-2 sm:col-span-1" >
                 <a href="#">
                     <img loading="lazy" class="w-full"
                         src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/collection1.jpg" alt="">
@@ -799,7 +799,7 @@ get_header(); ?>
 
 
 
-    <section class="pt-8 md:pt-10 lg:pt-12 xl:pt-16">
+    <section class="pt-8 md:pt-10 lg:pt-12 xl:pt-15">
         <div class="bg-sage icon-with-text">
             <div class="ct-container py-4 md:py-6 lg:py-10">
 
@@ -949,7 +949,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-16 new-arrivals">
+    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-15 new-arrivals">
 
         <div class="bg-white shadow">
             <div class="text-center space-y-2 py-6">
@@ -1121,7 +1121,7 @@ get_header(); ?>
     </section>
 
 
-    <section class="pt-8 md:pt-10 lg:pt-12 xl:pt-16">
+    <section class="pt-8 md:pt-10 lg:pt-12 xl:pt-15">
         <div class="px-8 py-12 lg:px-12 lg:py-20 text-white"
             style="background: linear-gradient(100deg, #964B30 1.71%, #DA7854 97.48%);">
             <div class="grid lg:grid-cols-2 gap-10 ct-container">
@@ -1150,7 +1150,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-16">
+    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-15">
         <div class="text-center space-y-2">
             <div class="text-2xl lg:text-3xl text-deep-forest italic lora">Shop by Gender</div>
         </div>
@@ -1231,7 +1231,7 @@ get_header(); ?>
 
 
 
-    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-16 testimonials">
+    <section class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-15 testimonials">
         <div class="text-center space-y-2 relative">
             <div class="text-2xl lg:text-3xl text-deep-forest italic lora">The love we got</div>
             <div class="flex gap-2 items-center absolute right-0 top-0 max-md:hidden">
@@ -1514,7 +1514,7 @@ get_header(); ?>
     </section>
 
 
-    <section class="pt-8 md:pt-10 lg:pt-12 xl:pt-16">
+    <section class="pt-8 md:pt-10 lg:pt-12 xl:pt-15">
         <div class="bg-sage">
             <div class="py-3 md:py-4 text-white text-sm lg:text-base">
                 <div class="marquee-container">
@@ -1540,7 +1540,7 @@ get_header(); ?>
 
 
     <section class="instagram-section">
-        <div class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-16">
+        <div class="ct-container pt-8 md:pt-10 lg:pt-12 xl:pt-15">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">

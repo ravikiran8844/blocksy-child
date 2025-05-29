@@ -30,7 +30,8 @@
         href="<?php echo get_stylesheet_directory_uri(); ?>/assets/InfiniteMarquee/infinite-marquee.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="//unpkg.com/alpinejs" defer></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
 </head>
 
@@ -48,20 +49,22 @@ $global_header = ob_get_clean();
     }
     ?>
 
-
-    <header x-data="{ open: false }" class="sticky top-0 z-10 !bg-[#F4F5F4]">
-        <div>
-            <div class="py-2 ct-container">
+    <div class="!bg-[#F4F5F4]">
+    <div class="py-2 ct-container">
                 <div class="text-center text-sm text-deep-forest">Zilara - A JEWELONE Product
                 </div>
-            </div>
+    </div>
+    </div>
+    <header x-data="{ open: false }" class="sticky top-0 z-10 !bg-[#F4F5F4]">
+        <div>
+            
             <div class="py-2 border-t border-b border-[#D9E2DA]">
-                <div class="grid gap-10 grid-cols-2 xl:grid-cols-[200px_auto_200px] ct-container">
-                    <div class="flex gap-4 items-center">
+                <div class="grid gap-5 grid-cols-[auto_1fr] xl:grid-cols-[250px_auto_250px] ct-container">
+                    <div class="flex gap-3 items-center">
 
                         <div class="lg:hidden">
                             <button @click="open = true" class="cursor-pointer">
-                                <svg class="size-8" xmlns="http://www.w3.org/2000/svg" width="34" height="23" viewBox="0 0 34 23" fill="none">
+                                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="34" height="23" viewBox="0 0 34 23" fill="none">
                                     <path d="M2.14648 2.00928H29.2727" stroke="black" stroke-width="2.51168" stroke-linecap="round" />
                                     <path d="M2.14648 20.0933H29.2727" stroke="black" stroke-width="2.51168" stroke-linecap="round" />
                                     <path d="M2.14648 11.0513H20.2306" stroke="black" stroke-width="2.51168" stroke-linecap="round" />
@@ -100,11 +103,12 @@ $global_header = ob_get_clean();
 
                     </div>
 
-                    <div class="flex gap-4 lg:gap-6 items-center justify-end w-full">
+                    <div class="flex gap-3 lg:gap-4 items-center justify-end w-full">
+
                         <div>
                             <a href="<?php echo home_url('/shop'); ?>" class="!grid gap-1 place-items-center grid-rows-[26px_auto]">
                                 <span>
-                                    <svg  class="!fill-none hover:!fill-none h-5" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="!fill-none hover:!fill-none h-5" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M26.8035 13.7256H14.3203V27.1084H26.8035V13.7256Z" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
                                         <path d="M28.1519 8.77722V13.613H4.53516V8.77722L8.47128 3.94141H24.2158L28.1519 8.77722Z" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
                                         <path d="M10.0449 13.3882V9.0022" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
@@ -114,8 +118,34 @@ $global_header = ob_get_clean();
                                     </svg>
 
                                 </span>
-                                <span class="!text-sm !text-deep-forest max-lg:hidden uppercase">
-                                stores
+                                <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
+                                    stores
+                                </span>
+                            </a>
+                        </div>
+                        <div>
+                            <?php
+                            if (function_exists('YITH_WCWL')) {
+                                $wishlist_count = YITH_WCWL()->count_products();
+                            }
+                            ?>
+
+                            <a href="<?php echo esc_url(YITH_WCWL()->get_wishlist_url()); ?>" class="relative !grid  gap-1 place-items-center grid-rows-[26px_auto]">
+                                <svg class="!fill-none hover:!fill-none h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                                    <g clip-path="url(#clip0_1844_1600)">
+                                        <path d="M23.1507 16.6754L15.2706 24.679L7.39777 16.6754C0.440189 9.61462 8.32624 1.6206 15.2778 8.68134C22.3314 1.51744 30.2114 9.51145 23.1579 16.685L23.1507 16.6754Z" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1844_1600">
+                                            <rect width="28.79" height="28.79" fill="white" transform="translate(0.886719 0.449707)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                             
+
+                                <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
+                                    WHISLIST
                                 </span>
                             </a>
                         </div>
@@ -137,7 +167,7 @@ $global_header = ob_get_clean();
                                             stroke="#3B4443" stroke-width="1.48892" />
                                     </svg>
                                 </span>
-                                <span class="!text-sm !text-deep-forest max-lg:hidden uppercase">
+                                <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
                                     CART
                                 </span>
                             </a>
@@ -167,7 +197,7 @@ $global_header = ob_get_clean();
                                     </svg>
                                 </span>
 
-                                <span class="!text-sm !text-deep-forest max-lg:hidden uppercase">
+                                <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
                                     ACCOUNT
                                 </span>
                             </a></div>

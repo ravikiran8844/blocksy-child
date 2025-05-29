@@ -172,3 +172,7 @@ body.product-template-default{
 button.checkout{
     @apply  !bg-terra-cota;
 }
+
+.hero-section{
+    @apply hidden;
+}

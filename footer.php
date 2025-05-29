@@ -28,11 +28,11 @@ do_action('blocksy:footer:after');
 
 <div class="py-3 md:py-4 ct-container">
 
-	<div class="h-[1px] my-8 bg-deep-forest w-full"></div>
+	<!-- <div class="h-[1px] my-8 bg-deep-forest w-full opacity-50"></div> -->
 
-	<div class="grid lg:grid-cols-[40%_auto] gap-6 max-lg:divide-y lg:divide-x divide-deep-forest">
+	<div class="grid lg:grid-cols-[40%_auto] gap-6 xl:gap-16 max-lg:divide-y lg:divide-x divide-deep-forest border-t border-deep-forest mt-6 pt-6 lg:mt-10 lg:pt-10">
 		<form>
-			<div class="max-lg:pb-6 lg:pe-6">
+			<div class="max-lg:pb-6 lg:pe-6 xl:pe-16 max-lg:border-b lg:border-r border-deep-forest">
 				<div class="flex items-start gap-4 mb-4">
 					<div>
 						<img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/Group-22448.svg" alt="">
@@ -60,7 +60,7 @@ do_action('blocksy:footer:after');
 		</form>
 
 		<div>
-			<div class="flex gap-10 flex-wrap justify-between">
+			<div class="max-md:flex gap-10 max-md:flex-wrap max-md:justify-between md:grid md:grid-cols-3">
 				<div>
 					<div class="lora font-semibold text-lg mb-4">Shop</div>
 
@@ -150,9 +150,9 @@ do_action('blocksy:footer:after');
 				</div>
 			</div>
 
-			<div class="h-[1px] my-4 bg-deep-forest w-full"></div>
+			<!-- <div class="h-[1px] my-4 bg-deep-forest w-full opacity-50"></div> -->
 
-			<div>
+			<div class="border-t border-deep-forest mt-4 pt-4">
 				<div class="lora font-semibold text-lg mb-4">Follow Us</div>
 
 				<div>

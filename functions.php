@@ -61,3 +61,11 @@ function custom_text_block_below_thumbnails() {
     </div>
     <?php
 }
+
+
+
+// Remove WooCommerce breadcrumbs
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+// Remove default page title
+add_filter('woocommerce_show_page_title', '__return_false');

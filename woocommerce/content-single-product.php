@@ -32,7 +32,38 @@ if (post_password_required()) {
 	return;
 }
 ?>
+<div class="custom-breadcrumb_wrapper grid min-[1000px]:grid-cols-2">
+<div class="bg-white pt-8 px-6 md:px-10 lg:px-12 xl:px-16">
+<?php
+if (is_product()) {
+    global $post;
+    $home_url = home_url('/');
+    $product_title = get_the_title($post->ID);
 
+    $terms = get_the_terms($post->ID, 'product_cat');
+    $category_name = '';
+    $category_link = '';
+
+    if ($terms && !is_wp_error($terms)) {
+        $category = $terms[0];
+        $category_name = $category->name;
+        $category_link = get_term_link($category);
+    }
+
+    echo '<nav class="custom-breadcrumb">';
+    echo '<a href="' . esc_url($home_url) . '">Home</a> | ';
+
+    if ($category_name && $category_link) {
+        echo '<a href="' . esc_url($category_link) . '">' . esc_html($category_name) . '</a> | ';
+    }
+
+    echo '<span>' . esc_html($product_title) . '</span>';
+    echo '</nav>';
+}
+?>
+</div>
+
+</div>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 
 

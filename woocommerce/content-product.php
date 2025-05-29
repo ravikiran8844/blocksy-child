@@ -49,7 +49,7 @@ $weight = $product->get_weight(); // Make sure weight is set in the product
             <a href="<?php echo esc_url( $product_link ); ?>">
                 <img src="<?php echo esc_url( $product_image[0] ); ?>" alt="<?php echo esc_attr( $product_title ); ?>">
             </a>
-            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center">
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                 <?php woocommerce_template_loop_add_to_cart(); ?>
             </div>
 			

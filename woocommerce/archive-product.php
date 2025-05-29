@@ -47,7 +47,7 @@ if (empty($image_url)) {
 }
 
 
- if (!empty($image_url)) : ?>
+if (!empty($image_url)) : ?>
 	<div class="relative w-full h-[200px] bg-blue-100 bg-cover bg-center" style="background-image: url('<?php echo esc_url($image_url); ?>');">
 		<div class="absolute top-1/2 left-[10%] transform  -translate-y-1/2">
 			<div class="text-2xl lora text-deep-forest">
@@ -82,6 +82,13 @@ do_action('woocommerce_before_main_content');
 
 
 do_action('woocommerce_shop_loop_header');
+?>
+
+
+
+
+
+<?php
 
 
 if (woocommerce_product_loop()) {

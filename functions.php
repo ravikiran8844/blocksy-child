@@ -55,9 +55,9 @@ add_action('woocommerce_product_thumbnails', 'custom_text_block_below_thumbnails
 
 function custom_text_block_below_thumbnails() {
     ?>
-    <div class="bg-[#FCF7F3] p-6 ms-auto mt-12">
+    <div class="bg-[#FCF7F3] p-6 ms-auto mt-8">
         <div class="text-xl md:text-2xl lora italic text-[#B05B3C] mb-2">Jewellery Care</div>
-        <div class="text-deep-forest text-sm md:text-md">Explore our Divine collection by Jewel One featuring a spectrum of deities, each idol resonating with spiritual significance.</div>
+        <div class="text-deep-forest text-sm md:text-md lg:text-base">Explore our Divine collection by Jewel One featuring a spectrum of deities, each idol resonating with spiritual significance.</div>
     </div>
     <?php
 }

@@ -69,3 +69,15 @@ remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 
 // Remove default page title
 add_filter('woocommerce_show_page_title', '__return_false');
+
+
+
+
+
+
+
+add_action('pre_get_posts', function($query) {
+	if ( ! is_admin() && $query->is_main_query() && is_search() ) {
+		$query->set('post_type', 'product');
+	}
+});

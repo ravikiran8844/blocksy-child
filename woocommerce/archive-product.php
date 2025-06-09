@@ -26,10 +26,14 @@ $queried_object = get_queried_object();
 
 $default_image = wp_get_upload_dir()['baseurl'] . '/2025/05/shop-banner.jpg';
 
+$title = '';
+$product_count = 0;
+$image_url = '';
+
 // For shop page
 if (is_shop()) {
 	$title = get_the_title(wc_get_page_id('shop'));
-	$product_count = wc_get_loop_prop('total'); // Get total products found
+	$product_count = wc_get_loop_prop('total'); // Total products found
 	$image_url = get_the_post_thumbnail_url(wc_get_page_id('shop'), 'full');
 }
 
@@ -41,15 +45,25 @@ elseif (is_product_category()) {
 	$image_url = wp_get_attachment_url($thumbnail_id);
 }
 
-// Fallback to default image if $image_url is empty
+// ✅ For product tag pages
+elseif (is_product_tag()) {
+	$title = $queried_object->name;
+	$product_count = $queried_object->count;
+	// Optional: Add custom image logic for tags if you want, or use default
+	$image_url = ''; // You can add custom logic if you've added thumbnails for tags
+}
+
+// Fallback to default image
 if (empty($image_url)) {
 	$image_url = $default_image;
 }
+?>
 
 
-if (!empty($image_url)) : ?>
-	<div class="relative w-full h-[200px] bg-blue-100 bg-cover bg-center" style="background-image: url('<?php echo esc_url($image_url); ?>');">
-		<div class="absolute top-1/2 left-[10%] transform  -translate-y-1/2">
+
+<?php if (!empty($image_url)) : ?>
+	<div class="relative w-full h-[200px] bg-cover bg-center" style="background-image: url('<?php echo esc_url($image_url); ?>');">
+		<div class="absolute top-1/2 left-[10%] transform -translate-y-1/2">
 			<div class="text-2xl lora text-deep-forest">
 				<?php echo esc_html($title); ?>
 			</div>
@@ -58,9 +72,10 @@ if (!empty($image_url)) : ?>
 			</div>
 		</div>
 	</div>
+<?php endif;
 
-<?php
-endif;
+
+
 
 
 /**

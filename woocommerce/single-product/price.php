@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Single Product Price
  *
@@ -15,16 +16,29 @@
  * @version 3.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+if (! defined('ABSPATH')) {
+    exit; // Exit if accessed directly
 }
 
 global $product;
 
 ?>
-<div class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?> !mb-0">
-    <?php echo $product->get_price_html(); ?></div>
+<?php
+$regular_price = (float) $product->get_regular_price();
+$sale_price    = (float) $product->get_sale_price();
+?>
+
+<div class="<?php echo esc_attr(apply_filters('woocommerce_product_price_class', 'price')); ?> !mb-0 flex gap-2 items-center">
+    <?php echo $product->get_price_html(); ?>
+
+    <?php if ($sale_price && $regular_price && $regular_price > $sale_price) :
+        $save_percent = round((($regular_price - $sale_price) / $regular_price) * 100);
+    ?>
+        <div class="bg-[#21C327] px-2 py-1 text-xs rounded-sm text-white w-fit uppercase">
+            Save <?php echo $save_percent; ?>%
+        </div>
+    <?php endif; ?>
+</div>
+
 
 <div class="text-sm text-deep-forest">(MRP Incl. of all taxes)</div>
-
-	

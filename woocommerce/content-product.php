@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying product content within loops
  *
@@ -15,44 +16,48 @@
  * @version 9.4.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 global $product;
 
 // Check if the product is a valid WooCommerce product and ensure its visibility before proceeding.
-if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
-	return;
+if (! is_a($product, WC_Product::class) || ! $product->is_visible()) {
+    return;
 }
 ?>
 <?php
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 global $product;
 
-if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
+if (! is_a($product, WC_Product::class) || ! $product->is_visible()) {
     return;
 }
 
 $product_id = $product->get_id();
-$product_link = get_permalink( $product_id );
-$product_title = get_the_title( $product_id );
-$product_image = wp_get_attachment_image_src( $product->get_image_id(), 'woocommerce_thumbnail' );
+$product_link = get_permalink($product_id);
+$product_title = get_the_title($product_id);
+$product_image = wp_get_attachment_image_src($product->get_image_id(), 'woocommerce_thumbnail');
 $product_price_html = $product->get_price_html();
 $regular_price = $product->get_regular_price();
 $sale_price = $product->get_sale_price();
 $weight = $product->get_weight(); // Make sure weight is set in the product
 
 ?>
-<li <?php wc_product_class( 'group !p-0', $product ); ?>>
+<li <?php wc_product_class('group !p-0', $product); ?>>
     <div>
-        <div class="relative">
-            <a href="<?php echo esc_url( $product_link ); ?>">
-                <img src="<?php echo esc_url( $product_image[0] ); ?>" alt="<?php echo esc_attr( $product_title ); ?>">
+        <div class="relative overflow-hidden">
+            <a href="<?php echo esc_url($product_link); ?>">
+                <img loading="lazy" class="hover:scale-105 transition ease-in-out duration-300" src="<?php echo esc_url($product_image[0]); ?>" alt="<?php echo esc_attr($product_title); ?>">
             </a>
             <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
                 <?php woocommerce_template_loop_add_to_cart(); ?>
             </div>
-			
+
+            <div class="absolute top-2 right-2">
+                <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
+            </div>
+
         </div>
 
         <div class="p-4 space-y-1 bg-white border-t border-gray-200">
@@ -94,20 +99,28 @@ $weight = $product->get_weight(); // Make sure weight is set in the product
             </div>
 
             <div class="flex gap-2 items-center flex-wrap">
-                <?php if ( $sale_price ) : ?>
-                <div class="text-md font-semibold text-sage">
-                    ₹<?php echo wc_price( $sale_price, ['currency' => '', 'decimals' => 0] ); ?></div>
-                <div class="text-sm line-through text-[#6D6D6D]">
-                    ₹<?php echo wc_price( $regular_price, ['currency' => '', 'decimals' => 0] ); ?></div>
+                <?php if ($sale_price) : ?>
+                    <div class="text-md font-semibold text-sage">
+                        <?php echo wc_price($sale_price, ['currency' => '', 'decimals' => 0]); ?></div>
+                    <div class="text-sm line-through text-[#6D6D6D]">
+                        <?php echo wc_price($regular_price, ['currency' => '', 'decimals' => 0]); ?></div>
                 <?php else : ?>
-                <div class="text-md font-semibold text-sage"><?php echo $product_price_html; ?></div>
+                    <div class="text-md font-semibold text-sage"><?php echo $product_price_html; ?></div>
                 <?php endif; ?>
             </div>
 
-            <div class="flex justify-between gap-2 flex-wrap">
-                <div class="text-sm text-deep-forest"><?php echo esc_html( $product_title ); ?></div>
+            <div class="flex justify-between gap-2 items-start">
+                <div class="text-sm text-deep-forest line-clamp-1 text-start"><?php echo esc_html($product_title); ?></div>
+
+
+
                 <div class="font-semibold text-sm text-sage">
-                    <?php echo $weight ? esc_html( $weight . 'g' ) : ''; ?>
+                    <?php
+                    if (function_exists('get_field')) {
+                        $weight = get_field('product_weight');
+                        echo !empty($weight) ? esc_html($weight) : '';
+                    }
+                    ?>
                 </div>
             </div>
         </div>

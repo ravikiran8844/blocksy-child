@@ -30,8 +30,8 @@
         href="<?php echo get_stylesheet_directory_uri(); ?>/assets/InfiniteMarquee/infinite-marquee.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="//unpkg.com/alpinejs" defer></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script> -->
 
 </head>
 
@@ -49,25 +49,29 @@ $global_header = ob_get_clean();
     }
     ?>
 
-    <div class="!bg-[#F4F5F4]">
-    <div class="py-2 ct-container">
-                <div class="text-center text-sm text-deep-forest">Zilara - A JEWELONE Product
-                </div>
-    </div>
+    <div class="md:!bg-[#F4F5F4] max-md:bg-sage">
+        <div class="py-2 ct-container">
+            <div class="text-center text-sm md:!text-deep-forest max-md:!text-white">Zilara - A JEWELONE Product
+            </div>
+        </div>
     </div>
     <header x-data="{ open: false }" class="sticky top-0 z-10 !bg-[#F4F5F4]">
         <div>
-            
+
             <div class="py-2 border-t border-b border-[#D9E2DA]">
                 <div class="grid gap-5 grid-cols-[auto_1fr] xl:grid-cols-[250px_auto_250px] ct-container">
                     <div class="flex gap-3 items-center">
 
                         <div class="lg:hidden">
                             <button @click="open = true" class="cursor-pointer">
-                                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="34" height="23" viewBox="0 0 34 23" fill="none">
-                                    <path d="M2.14648 2.00928H29.2727" stroke="black" stroke-width="2.51168" stroke-linecap="round" />
-                                    <path d="M2.14648 20.0933H29.2727" stroke="black" stroke-width="2.51168" stroke-linecap="round" />
-                                    <path d="M2.14648 11.0513H20.2306" stroke="black" stroke-width="2.51168" stroke-linecap="round" />
+                                <svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="34" height="23"
+                                    viewBox="0 0 34 23" fill="none">
+                                    <path d="M2.14648 2.00928H29.2727" stroke="black" stroke-width="2.51168"
+                                        stroke-linecap="round" />
+                                    <path d="M2.14648 20.0933H29.2727" stroke="black" stroke-width="2.51168"
+                                        stroke-linecap="round" />
+                                    <path d="M2.14648 11.0513H20.2306" stroke="black" stroke-width="2.51168"
+                                        stroke-linecap="round" />
                                 </svg>
                             </button>
 
@@ -105,16 +109,33 @@ $global_header = ob_get_clean();
 
                     <div class="flex gap-3 lg:gap-4 items-center justify-end w-full">
 
+
+
+
+
+
+
+
+
                         <div>
-                            <a href="<?php echo home_url('/shop'); ?>" class="!grid gap-1 place-items-center grid-rows-[26px_auto]">
+                            <a href="<?php echo home_url('/shop'); ?>"
+                                class="!grid gap-1 place-items-center grid-rows-[26px_auto]">
                                 <span>
-                                    <svg class="!fill-none hover:!fill-none h-5" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.8035 13.7256H14.3203V27.1084H26.8035V13.7256Z" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
-                                        <path d="M28.1519 8.77722V13.613H4.53516V8.77722L8.47128 3.94141H24.2158L28.1519 8.77722Z" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
-                                        <path d="M10.0449 13.3882V9.0022" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
-                                        <path d="M16.3438 13.3882V9.0022" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
-                                        <path d="M22.6406 13.3882V9.0022" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
-                                        <path d="M5.88477 13.3882V27.5582" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
+                                    <svg class="!fill-none hover:!fill-none h-5" viewBox="0 0 33 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.8035 13.7256H14.3203V27.1084H26.8035V13.7256Z" stroke="#3B4443"
+                                            stroke-width="1.79937" stroke-linejoin="round" />
+                                        <path
+                                            d="M28.1519 8.77722V13.613H4.53516V8.77722L8.47128 3.94141H24.2158L28.1519 8.77722Z"
+                                            stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
+                                        <path d="M10.0449 13.3882V9.0022" stroke="#3B4443" stroke-width="1.79937"
+                                            stroke-linejoin="round" />
+                                        <path d="M16.3438 13.3882V9.0022" stroke="#3B4443" stroke-width="1.79937"
+                                            stroke-linejoin="round" />
+                                        <path d="M22.6406 13.3882V9.0022" stroke="#3B4443" stroke-width="1.79937"
+                                            stroke-linejoin="round" />
+                                        <path d="M5.88477 13.3882V27.5582" stroke="#3B4443" stroke-width="1.79937"
+                                            stroke-linejoin="round" />
                                     </svg>
 
                                 </span>
@@ -130,19 +151,24 @@ $global_header = ob_get_clean();
                             }
                             ?>
 
-                            <a href="<?php echo esc_url(YITH_WCWL()->get_wishlist_url()); ?>" class="relative !grid  gap-1 place-items-center grid-rows-[26px_auto]">
-                                <svg class="!fill-none hover:!fill-none h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                            <a href="<?php echo esc_url(YITH_WCWL()->get_wishlist_url()); ?>"
+                                class="relative !grid  gap-1 place-items-center grid-rows-[26px_auto]">
+                                <svg class="!fill-none hover:!fill-none h-5" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 30 30" fill="none">
                                     <g clip-path="url(#clip0_1844_1600)">
-                                        <path d="M23.1507 16.6754L15.2706 24.679L7.39777 16.6754C0.440189 9.61462 8.32624 1.6206 15.2778 8.68134C22.3314 1.51744 30.2114 9.51145 23.1579 16.685L23.1507 16.6754Z" stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
+                                        <path
+                                            d="M23.1507 16.6754L15.2706 24.679L7.39777 16.6754C0.440189 9.61462 8.32624 1.6206 15.2778 8.68134C22.3314 1.51744 30.2114 9.51145 23.1579 16.685L23.1507 16.6754Z"
+                                            stroke="#3B4443" stroke-width="1.79937" stroke-linejoin="round" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_1844_1600">
-                                            <rect width="28.79" height="28.79" fill="white" transform="translate(0.886719 0.449707)" />
+                                            <rect width="28.79" height="28.79" fill="white"
+                                                transform="translate(0.886719 0.449707)" />
                                         </clipPath>
                                     </defs>
                                 </svg>
 
-                             
+
 
                                 <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
                                     WHISLIST
@@ -173,7 +199,7 @@ $global_header = ob_get_clean();
                             </a>
 
                         </div>
-                        <div data-id="account" data-state="out"><a href="#account-modal"
+                        <!-- <div data-id="account" data-state="out"><a href="#account-modal"
                                 class="ct-account-item !grid gap-1 place-items-center grid-rows-[26px_auto]" data-label="left"
                                 aria-label="Login">
 
@@ -200,7 +226,77 @@ $global_header = ob_get_clean();
                                 <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
                                     ACCOUNT
                                 </span>
-                            </a></div>
+                            </a>
+                        </div> -->
+                        <div>
+
+                            <?php if (is_user_logged_in()) : ?>
+                                <a href="<?php echo get_permalink(get_option("woocommerce_myaccount_page_id")); ?>"
+                                    class="relative !grid  gap-1 place-items-center grid-rows-[26px_auto]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="!fill-none hover:!fill-none h-5"
+                                        viewBox="0 0 30 30" fill="none">
+                                        <g clip-path="url(#clip0_1835_361)">
+                                            <path
+                                                d="M15.2686 13.5006C18.0014 13.5006 20.2169 11.2851 20.2169 8.55228C20.2169 5.81942 18.0014 3.604 15.2686 3.604C12.5357 3.604 10.3203 5.81942 10.3203 8.55228C10.3203 11.2851 12.5357 13.5006 15.2686 13.5006Z"
+                                                stroke="#3B4443" stroke-width="1.79937" />
+                                            <path
+                                                d="M4.63653 25.1836C4.36543 25.1836 5.41146 22.1319 5.49903 21.9136C7.06449 18.0125 10.1546 18.0305 15.2588 18.0305C20.3631 18.0305 23.8478 18.0137 25.4145 21.9136C25.5021 22.1319 26.1522 25.1812 25.8799 25.1812H4.63653V25.1836Z"
+                                                stroke="#3B4443" stroke-width="1.79937" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1835_361">
+                                                <rect width="28.79" height="28.79" fill="white"
+                                                    transform="translate(0.873047 0.449707)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+
+
+                                    <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
+                                        ACCOUNT
+                                    </span>
+                                </a>
+
+                                </a>
+                            <?php else : ?>
+                                <a href="<?php echo get_permalink(get_option("woocommerce_myaccount_page_id")); ?>"
+                                    class="relative !grid  gap-1 place-items-center grid-rows-[26px_auto]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="!fill-none hover:!fill-none h-5"
+                                        viewBox="0 0 30 30" fill="none">
+                                        <g clip-path="url(#clip0_1835_361)">
+                                            <path
+                                                d="M15.2686 13.5006C18.0014 13.5006 20.2169 11.2851 20.2169 8.55228C20.2169 5.81942 18.0014 3.604 15.2686 3.604C12.5357 3.604 10.3203 5.81942 10.3203 8.55228C10.3203 11.2851 12.5357 13.5006 15.2686 13.5006Z"
+                                                stroke="#3B4443" stroke-width="1.79937" />
+                                            <path
+                                                d="M4.63653 25.1836C4.36543 25.1836 5.41146 22.1319 5.49903 21.9136C7.06449 18.0125 10.1546 18.0305 15.2588 18.0305C20.3631 18.0305 23.8478 18.0137 25.4145 21.9136C25.5021 22.1319 26.1522 25.1812 25.8799 25.1812H4.63653V25.1836Z"
+                                                stroke="#3B4443" stroke-width="1.79937" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1835_361">
+                                                <rect width="28.79" height="28.79" fill="white"
+                                                    transform="translate(0.873047 0.449707)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+
+
+                                    <span class="!text-xs !text-deep-forest max-lg:hidden uppercase">
+                                        ACCOUNT
+                                    </span>
+                                </a>
+
+                                </a>
+                            <?php endif; ?>
+
+
+
+
+
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -211,366 +307,40 @@ $global_header = ob_get_clean();
         <nav class="bg-sage max-lg:hidden lg:block relative"
             style="box-shadow: 0px 10px 30.5px 0px rgba(175, 175, 175, 0.20);">
             <div class="ct-container py-3 flex justify-center items-center gap-12">
-                <!-- Menu Item 1 -->
-                <div x-data="{ open: false }" @click.away="open = false">
-                    <button @click="open = !open" class="!text-white uppercase !text-sm  px-4 py-2 block cursor-pointer">
-                        Idols
-                    </button>
-
-                    <!-- Mega Menu -->
-                    <div x-show="open" x-cloak x-transition class="absolute left-0 top-full w-full bg-white shadow-xl z-50"
-                        style="display: none;">
-                        <div class="ct-container py-6">
-                            <div class="text-xl font-semibold text-gray-700 mb-2 italic lora">Idols</div>
-                            <div class="grid grid-cols-4 gap-6">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/1-20-1.jpg" alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Idol 1
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/1-20-1.jpg" alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Idol 2
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/1-20-1.jpg" alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Idol 3
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <div class="text-md !font-semibold text-deep-forest mb-2 uppercase">Explore More
-                                    </div>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">shop by metal
-                                    </div>
-                                    <ul class="space-y-1 !list-none !pl-0">
-
-                                        <li><a href="#" class="!text-deep-forest">Silver Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Brass Idols</a></li>
-                                    </ul>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">Curated by</div>
-
-                                    <ul class="space-y-1 !list-none !pl-0">
+                <a href="<?php echo esc_url(home_url('/product-category/idols/')); ?>"
+                    class="!text-white uppercase !text-sm">
+                    Idols
+                </a>
 
 
-                                        <li><a href="#" class="!text-deep-forest">Ganesha Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Lakshmi Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Hanuman Idols</a></li>
-                                    </ul>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Menu Item 2 -->
-                <div x-data="{ open: false }" @click.away="open = false">
-                    <button @click="open = !open" class="!text-white uppercase !text-sm  px-4 py-2 block cursor-pointer">
-                        Earrings
-                    </button>
-
-                    <!-- Another Mega Menu -->
-                    <div x-show="open" x-cloak x-transition class="absolute left-0 top-full w-full bg-white shadow-xl z-50"
-                        style="display: none;">
-                        <div class="ct-container py-6">
-                            <div class="text-xl font-semibold text-gray-700 mb-2 italic lora">Earrings</div>
-                            <div class="grid grid-cols-4 gap-6">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Earring 1
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Earring 2
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-1.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Earring 3
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <div class="text-md !font-semibold text-deep-forest mb-2 uppercase">Explore More
-                                    </div>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">shop by metal
-                                    </div>
-                                    <ul class="space-y-1 !list-none !pl-0">
-
-                                        <li><a href="#" class="!text-deep-forest">Silver Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Brass Idols</a></li>
-                                    </ul>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">Curated by</div>
-
-                                    <ul class="space-y-1 !list-none !pl-0">
-
-
-                                        <li><a href="#" class="!text-deep-forest">Ganesha Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Lakshmi Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Hanuman Idols</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Menu Item 3 -->
-                <div x-data="{ open: false }" @click.away="open = false">
-                    <button @click="open = !open" class="!text-white uppercase !text-sm  px-4 py-2 block cursor-pointer">
-                        Necklace
-                    </button>
-
-                    <!-- Another Mega Menu -->
-                    <div x-show="open" x-cloak x-transition class="absolute left-0 top-full w-full bg-white shadow-xl z-50"
-                        style="display: none;">
-                        <div class="ct-container py-6">
-                            <div class="text-xl font-semibold text-gray-700 mb-2 italic lora">Necklace</div>
-                            <div class="grid grid-cols-4 gap-6">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Necklace 1
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Necklace 2
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-4.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Necklace 3
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <div class="text-md !font-semibold text-deep-forest mb-2 uppercase">Explore More
-                                    </div>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">shop by metal
-                                    </div>
-                                    <ul class="space-y-1 !list-none !pl-0">
-
-                                        <li><a href="#" class="!text-deep-forest">Silver Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Brass Idols</a></li>
-                                    </ul>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">Curated by</div>
-
-                                    <ul class="space-y-1 !list-none !pl-0">
-
-
-                                        <li><a href="#" class="!text-deep-forest">Ganesha Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Lakshmi Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Hanuman Idols</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Menu Item 4 -->
-                <div x-data="{ open: false }" @click.away="open = false">
-                    <button @click="open = !open" class="!text-white uppercase !text-sm  px-4 py-2 block cursor-pointer">
-                        Stud
-                    </button>
-
-                    <!-- Another Mega Menu -->
-                    <div x-show="open" x-cloak x-transition class="absolute left-0 top-full w-full bg-white shadow-xl z-50"
-                        style="display: none;">
-                        <div class="ct-container py-6">
-                            <div class="text-xl font-semibold text-gray-700 mb-2 italic lora">Stud</div>
-                            <div class="grid grid-cols-4 gap-6">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Stud 1
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Stud 2
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-2.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Stud 3
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <div class="text-md !font-semibold text-deep-forest mb-2 uppercase">Explore More
-                                    </div>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">shop by metal
-                                    </div>
-                                    <ul class="space-y-1 !list-none !pl-0">
-
-                                        <li><a href="#" class="!text-deep-forest">Silver Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Brass Idols</a></li>
-                                    </ul>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">Curated by</div>
-
-                                    <ul class="space-y-1 !list-none !pl-0">
-
-
-                                        <li><a href="#" class="!text-deep-forest">Ganesha Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Lakshmi Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Hanuman Idols</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Menu Item 5 -->
-                <div x-data="{ open: false }" @click.away="open = false">
-                    <button @click="open = !open" class="!text-white uppercase !text-sm  px-4 py-2 block cursor-pointer">
-                        Pendant
-                    </button>
-
-                    <!-- Another Mega Menu -->
-                    <div x-show="open" x-cloak x-transition class="absolute left-0 top-full w-full bg-white shadow-xl z-50"
-                        style="display: none;">
-                        <div class="ct-container py-6">
-                            <div class="text-xl font-semibold text-gray-700 mb-2 italic lora">Pendant</div>
-                            <div class="grid grid-cols-4 gap-6">
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Pendant 1
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Pendant 2
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="<?php echo wp_get_upload_dir()['baseurl']; ?>/2025/05/new-arrivals-3.jpg"
-                                            alt="">
-                                        <div class="text-center text-deep-forest mt-2 font-medium">
-                                            Pendant 3
-                                        </div>
-                                    </a>
-                                </div>
-                                <div>
-                                    <div class="text-md !font-semibold text-deep-forest mb-2 uppercase">Explore More
-                                    </div>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">shop by metal
-                                    </div>
-                                    <ul class="space-y-1 !list-none !pl-0">
-
-                                        <li><a href="#" class="!text-deep-forest">Silver Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Brass Idols</a></li>
-                                    </ul>
-                                    <hr class="my-4">
-                                    <div class="uppercase text-md !font-semibold text-deep-forest mb-2">Curated by</div>
-
-                                    <ul class="space-y-1 !list-none !pl-0">
-
-
-                                        <li><a href="#" class="!text-deep-forest">Ganesha Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Lakshmi Idols</a></li>
-                                        <li><a href="#" class="!text-deep-forest">Hanuman Idols</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </nav>
 
 
-        <!-- Drawer Menu -->
+
         <div>
             <!-- Drawer -->
             <div x-cloak x-show="open" @click.away="open = false" x-transition:enter="transition transform duration-300"
-                x-transition:enter-start="translate-x-full"
-                x-transition:enter-end="translate-x-0"
-                x-transition:leave="transition transform duration-300"
-                x-transition:leave-start="translate-x-0"
-                x-transition:leave-end="translate-x-full"
-                class="fixed top-0 right-0 h-full w-84 bg-white shadow-lg z-50 p-6 overflow-y-auto">
+                x-transition:enter-start="-translate-x-full" x-transition:enter-end="-translate-x-0"
+                x-transition:leave="transition transform duration-300" x-transition:leave-start="-translate-x-0"
+                x-transition:leave-end="-translate-x-full"
+                class="fixed top-0 left-0 h-full w-84 bg-white text-deep-forest shadow-lg z-50 p-4 overflow-y-auto">
 
                 <!-- Close Button -->
-                <button @click="open = false" class="mb-4 flex justify-end w-full cursor-pointer text-deep-forest hover:text-black">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
+                <button @click="open = false"
+                    class="mb-4 flex justify-end w-full cursor-pointer !text-deep-forest">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
 
                 <!-- Navigation Links -->
-                <nav class="space-y-4">
-                    <a href="/" class="block text-lg !text-deep-forest">Home</a>
+                <nav class="space-y-4 mt-4">
+                    <!-- <a href="/" class="block text-lg !text-deep-forest">Home</a> -->
+                    <a href="<?php echo esc_url(home_url('/product-category/idols/')); ?>" class="block text-md !text-white rounded-md !bg-sage py-2 px-4">IDOLS</a>
                 </nav>
             </div>
         </div>

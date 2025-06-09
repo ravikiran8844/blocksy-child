@@ -212,7 +212,7 @@ do_action('blocksy:footer:after');
 
 <?php wp_footer(); ?>
 
-<script>
+<!-- <script>
   document.addEventListener('DOMContentLoaded', function () {
     AOS.init({
 		duration: 1000,
@@ -220,7 +220,7 @@ do_action('blocksy:footer:after');
 		once: false
     });
   });
-</script>
+</script> -->
 
 </body>
 

@@ -11,6 +11,8 @@
   --swiper-scrollbar-size: 2px;
   --swiper-scrollbar-drag-bg-color: #3d3d3d;
   --swiper-scrollbar-bg-color: #cecece;
+  --theme-form-field-background-initial-color:#fff;
+
 }
 .lora {
   font-family: "Lora", serif;
@@ -199,9 +201,54 @@ button.checkout {
 }
 
 .wishlist-title-container h2{
-    @apply text-deep-forest text-2xl font-bold;
+    @apply text-black text-2xl font-semibold;
 }
 
 .wishlist_table .product-add-to-cart a{
     @apply bg-terra-cota text-white !text-sm !px-4 !py-2 !rounded-full !block;
+}
+
+[class*=ct-dynamic-count]{
+  @apply !bg-terra-cota;
+}
+
+/* 
+a.yith-wcwl-add-to-wishlist-button--added svg{
+  @apply !text-terra-cota;
+} */
+
+/* .product-name h3{
+  @apply !text-md !font-medium;
+} */
+.product-name h3 a{
+  @apply !text-black !text-base !font-medium;
+}
+.wishlist_table.mobile li{
+  @apply !mb-10;
+}  
+
+.ct-checkbox, .comment-form input[type=checkbox], #ship-to-different-address-checkbox, .wc-block-checkbox-list input[type=checkbox], .wc-block-checkbox-list .wc-block-components-checkbox .wc-block-components-checkbox__input[type=checkbox], .woocommerce-form__input[type=checkbox], .woocommerce-form__label-for-checkbox input[type=checkbox], .woocommerce-input-wrapper input[type=checkbox], #payment .payment_box input[type=checkbox], .forminator-ui[data-design=none] .forminator-checkbox input[type=checkbox], .wpforms-container:not(.wpforms-container-full) input[type=checkbox], .ff-inherit-theme-style input[type=checkbox]{
+  @apply !border-deep-forest;
+}
+
+.wc-block-components-checkbox {
+  @apply !mt-1;
+}
+/* select, textarea, input:is([type=url],[type=tel],[type=text],[type=time],[type=date],[type=datetime],[type=datetime-local],[type=email],[type=number],[type=search],[type=password]), fieldset .wc-stripe-elements-field, .ff-inherit-theme-style .ff-el-form-control:not([size]):not([multiple]){
+  @apply !bg-white !border border-[#D9E2DA];
+} */
+
+
+.woocommerce-mini-cart__buttons .button.wc-forward {
+  --gridColumn: span 2 !important;
+  display: none !important;
+}
+.woocommerce-mini-cart__buttons .button.checkout.wc-forward {
+  @apply !flex justify-center items-center !uppercase;
+}
+
+
+.swiper-slide .yith-wcwl-add-to-wishlist-button.yith-wcwl-add-to-wishlist-button--anchor.yith-wcwl-add-to-wishlist-button--single{
+  background-color: transparent !important;
+  box-shadow: none !important;
 }

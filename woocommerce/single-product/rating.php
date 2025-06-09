@@ -46,7 +46,7 @@ if ($rating_count > 0) : ?>
 
 <?php else : ?>
 
-	<div>
+	<div class="flex items-center gap-1">
 		<svg xmlns="http://www.w3.org/2000/svg" width="85" height="16" viewBox="0 0 105 19" fill="none">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z" fill="#FFAA00"></path>
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z" fill="#FFBD38"></path>
@@ -58,8 +58,39 @@ if ($rating_count > 0) : ?>
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z" fill="#FFBD38"></path>
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z" fill="#FFAA00"></path>
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z" fill="#FFBD38"></path>
-		</svg>
+		</svg> 
+		<span class="text-xs">(0 Reviews)</span>
 	</div>
 
 
 <?php endif; ?>
+
+
+<div class="text-md !mb-0">Made with 92.5 Silver</div>
+
+<hr class="text-[#D9E2DA] !my-4">
+
+
+	<div class="grid md:grid-cols-2 gap-6 lg:gap-10 mb-6">
+	<?php
+	$metalType = get_field('metal_type', $product->get_id());
+	if (!empty($metalType)) : ?>
+		<div>
+			<div class="mb-1 text-md">Metal</div>
+			<div class="bg-white px-4 h-10 flex items-center w-full border border-[#D9E2DA] rounded-sm max-w-sm truncate">
+				<?php echo esc_html($metalType); ?>
+			</div>
+		</div>
+	<?php endif; ?>
+
+	<?php
+	$dimension = get_field('product_dimension', $product->get_id());
+	if (!empty($dimension)) : ?>
+		<div>
+			<div class="mb-1 text-md">Dimensions</div>
+			<div class="h-12 flex items-center">
+				<?php echo esc_html($dimension); ?>
+			</div>
+		</div>
+	<?php endif; ?> 
+    </div>

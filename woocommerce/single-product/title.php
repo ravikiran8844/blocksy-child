@@ -26,7 +26,7 @@ if (! defined('ABSPATH')) {
       <!-- Dropdown -->
       <div x-show="open" x-cloak @click.outside="open = false"
         x-transition
-        class="absolute left-0 mt-2 w-fit bg-white  rounded shadow-lg z-50 p-2 space-y-3">
+        class="absolute left-0 mt-2 w-fit bg-white  rounded shadow-lg z-1 p-2 space-y-3">
         <a :href="`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`" target="_blank"
           class="block text-sm text-gray-700 hover:text-sage"><svg class="size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a :href="`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}`" target="_blank"

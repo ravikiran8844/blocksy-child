@@ -66,7 +66,12 @@ if ($rating_count > 0) : ?>
 <?php endif; ?>
 
 
-<div class="text-md !mb-0">Made with 92.5 Silver</div>
+
+<?php if ( get_field('product_caption' ) ): ?>
+	<div class="text-md !mb-0"><?php echo esc_html( get_field('product_caption') ); ?></div>
+<?php endif; ?>
+
+
 
 <hr class="text-[#D9E2DA] !my-4">
 

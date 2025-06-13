@@ -511,7 +511,7 @@ do_action('woocommerce_sidebar');
                     </svg></div>
             </div>
         </div>
-    </section>
+</section>
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

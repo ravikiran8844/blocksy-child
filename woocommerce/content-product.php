@@ -48,9 +48,9 @@ $weight = $product->get_weight(); // Make sure weight is set in the product
     <div>
         <div class="relative overflow-hidden">
             <a href="<?php echo esc_url($product_link); ?>">
-                <img loading="lazy" class="hover:scale-105 transition ease-in-out duration-300" src="<?php echo esc_url($product_image[0]); ?>" alt="<?php echo esc_attr($product_title); ?>">
+                <img height="330" width="330" loading="lazy" class="hover:scale-105 transition ease-in-out duration-300 bg-white w-full" src="<?php echo esc_url($product_image[0]); ?>" alt="<?php echo esc_attr($product_title); ?>">
             </a>
-            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center px-4">
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full text-center px-2 py-3">
                 <?php woocommerce_template_loop_add_to_cart(); ?>
             </div>
 
@@ -60,47 +60,27 @@ $weight = $product->get_weight(); // Make sure weight is set in the product
 
         </div>
 
-        <div class="p-4 space-y-1 bg-white border-t border-gray-200">
+        <div class="p-2 sm:p-4 space-y-1 bg-white border-t border-gray-200">
             <!-- Static star SVG (optional: make dynamic using rating if needed) -->
             <!-- You can include the star SVG here directly or use WooCommerce rating -->
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="85" height="16" viewBox="0 0 105 19" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z"
-                        fill="#FFAA00"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z"
-                        fill="#FFBD38"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z"
-                        fill="#FFAA00"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z"
-                        fill="#FFBD38"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z"
-                        fill="#FFAA00"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z"
-                        fill="#FFBD38"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z"
-                        fill="#FFAA00"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z"
-                        fill="#FFBD38"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z"
-                        fill="#FFAA00"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z"
-                        fill="#FFBD38"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="16" viewBox="0 0 105 19" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124L3.62715 18.2609L5.24568 11.4905L0 6.97504L6.8691 6.43914L9.49609 0Z" fill="#FFAA00"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49609 0L12.1229 6.43914L18.992 6.97504L13.7463 11.4905L15.3648 18.2609L9.49609 14.6124V0Z" fill="#FFBD38"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9979 0L33.6248 6.43914L40.4939 6.97504L35.2483 11.4905L36.8668 18.2609L30.9979 14.6124L25.1291 18.2609L26.7476 11.4905L21.502 6.97504L28.3711 6.43914L30.9979 0Z" fill="#FFAA00"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.998 0L33.625 6.43914L40.4941 6.97504L35.2485 11.4905L36.867 18.2609L30.998 14.6124V0Z" fill="#FFBD38"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M52.4998 0L55.1268 6.43914L61.9959 6.97504L56.7502 11.4905L58.3688 18.2609L52.4998 14.6124L46.6311 18.2609L48.2496 11.4905L43.0039 6.97504L49.873 6.43914L52.4998 0Z" fill="#FFAA00"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M52.5 0L55.127 6.43914L61.9961 6.97504L56.7504 11.4905L58.3689 18.2609L52.5 14.6124V0Z" fill="#FFBD38"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M74.0018 0L76.6287 6.43914L83.4979 6.97504L78.2522 11.4905L79.8707 18.2609L74.0018 14.6124L68.133 18.2609L69.7515 11.4905L64.5059 6.97504L71.375 6.43914L74.0018 0Z" fill="#FFAA00"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M74.002 0L76.6289 6.43914L83.498 6.97504L78.2524 11.4905L79.8709 18.2609L74.002 14.6124V0Z" fill="#FFBD38"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M95.5037 0L98.1307 6.43914L105 6.97504L99.7541 11.4905L101.373 18.2609L95.5037 14.6124L89.635 18.2609L91.2535 11.4905L86.0078 6.97504L92.8769 6.43914L95.5037 0Z" fill="#FFAA00"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M95.5039 0L98.1309 6.43914L105 6.97504L99.7543 11.4905L101.373 18.2609L95.5039 14.6124V0Z" fill="#FFBD38"></path>
                 </svg>
             </div>
 
             <div class="flex gap-2 items-center flex-wrap">
                 <?php if ($sale_price) : ?>
-                    <div class="text-md font-semibold text-sage">
+                    <div class="text-sm sm:text-md font-semibold text-sage">
                         <?php echo wc_price($sale_price, ['currency' => '', 'decimals' => 0]); ?></div>
                     <div class="text-sm line-through text-[#6D6D6D]">
                         <?php echo wc_price($regular_price, ['currency' => '', 'decimals' => 0]); ?></div>

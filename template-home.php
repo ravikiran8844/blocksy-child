@@ -508,28 +508,28 @@ get_header(); ?>
                 </div> -->
 
                 <?php
-$featured_products = get_field('featured_products');
+                $featured_products = get_field('featured_products');
 
-if ($featured_products): ?>
-    <div class="products swiper-wrapper">
-        <?php foreach ($featured_products as $row):
-            $product = $row['product'];
-            if (!$product) continue;
+                if ($featured_products): ?>
+                    <div class="products swiper-wrapper">
+                        <?php foreach ($featured_products as $row):
+                            $product = $row['product'];
+                            if (!$product) continue;
 
-            $product_id = is_object($product) ? $product->ID : $product;
-            $post_object = get_post($product_id);
+                            $product_id = is_object($product) ? $product->ID : $product;
+                            $post_object = get_post($product_id);
 
-            setup_postdata($GLOBALS['post'] =& $post_object);
-            echo '<div class="swiper-slide border-r border-[#C5C5C5] last:border-0">';
-            wc_get_template_part( 'content', 'product' );
-            echo '</div>';
+                            setup_postdata($GLOBALS['post'] =& $post_object);
+                            echo '<div class="swiper-slide border-r border-[#C5C5C5] last:border-0">';
+                            wc_get_template_part( 'content', 'product' );
+                            echo '</div>';
 
-        endforeach; ?>
-    </div>
-    <?php wp_reset_postdata(); ?>
-<?php else: ?>
-    <p>No featured products found.</p>
-<?php endif; ?>
+                        endforeach; ?>
+                    </div>
+                    <?php wp_reset_postdata(); ?>
+                <?php else: ?>
+                    <p>No featured products found.</p>
+                <?php endif; ?>
 
 
                 

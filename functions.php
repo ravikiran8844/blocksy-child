@@ -54,12 +54,17 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 add_action('woocommerce_product_thumbnails', 'custom_text_block_below_thumbnails', 20);
 
 function custom_text_block_below_thumbnails() {
-    ?>
-    <div class="bg-[#FCF7F3] p-6 ms-auto mt-8">
-        <div class="text-xl md:text-2xl lora italic text-[#B05B3C] mb-2">Jewellery Care</div>
-        <div class="text-deep-forest text-sm md:text-md lg:text-base">Explore our Divine collection by Jewel One featuring a spectrum of deities, each idol resonating with spiritual significance.</div>
-    </div>
-    <?php
+    $title = get_field('thumbnail_below_title');
+    $text = get_field('thumbnail_below_text');
+
+    if ( $title && $text ) {
+        ?>
+        <div class="bg-[#FCF7F3] p-6 ms-auto mt-8">
+            <div class="text-xl md:text-2xl lora italic text-[#B05B3C] mb-2"><?php echo esc_html( $title ); ?></div>
+            <div class="text-deep-forest text-sm md:text-md lg:text-base"><?php echo esc_html( $text ); ?></div>
+        </div>
+        <?php
+    }
 }
 
 

@@ -256,3 +256,17 @@ a.yith-wcwl-add-to-wishlist-button--added svg{
 [data-products] {
  @apply !gap-3 md:!gap-4 !grid-cols-1 min-[400px]:!grid-cols-2 md:!grid-cols-3 xl:!grid-cols-4 ;
 }
+
+
+.woocommerce-thankyou-order-received {
+  display: block !important;
+  color: #000; /* or appropriate contrast */
+}
+
+
+/* .yith-wcwl-feedback-messages-container{
+  top: 20% !important;
+  left: unset !important;
+  right: 40px !important;
+  transform:unset  !important;
+} */

@@ -20,7 +20,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received">
+<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received !flex !items-center">
     Thank you. Your order has been received.
 </p>
 
